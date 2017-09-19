@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Георгий Мкртчян](https://up.htmlacademy.ru/adaptive/12/user/60370).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Попов](https://github.com/tsergeytovarov).
 
 ---
 
