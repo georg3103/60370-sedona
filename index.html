@@ -11,42 +11,44 @@
 
       <header class="page-header">
         <nav class="main-nav">
-          <button class="main-nav__icon"></button>
+          <button class="main-nav__button btn-toggle" type="button"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="" class="main-nav__link" href="#">
+              <a class="main-nav__link" href="">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="" class="main-nav__link" href="#">
+              <a class="main-nav__link" href="">
                 Фото и видео
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="" class="main-nav__link" href="#">
+              <a class="main-nav__link" href="">
                 Форма отзыва
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="" class="main-nav__link" href="#">
+              <a class="main-nav__link" href="">
                 Html Academy
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--logo">
-              <a href="" class="main-nav__logo" href="#">
-                <img src="#" alt="Лого City of Sedona">
               </a>
             </li>
           </ul>
         </nav>
+        <div class="logo">
+          <a href="" class="logo__picture">
+            <img src="#" alt="Лого City of Sedona">
+          </a>
+        </div>
       </header>
 
       <!-- Main -->
 
       <div class="intro">
-        <img class="intro__banner" src="#" alt="Sedona Welcome to the generous">
+        <img class="intro__picture" src="#" alt="Sedona Welcome to the generous">
       </div>
+
+      <!-- The same -->
 
       <div class="common-section">
         <div class="common-section__title">
@@ -84,12 +86,12 @@
 
       <!-- Main  Features [1] -->
 
-        <li class="features__item">
-          <i class="features__icon">
-            <svg class="features__icon-pic"></svg>
-          </i>
-          <div class="features__text">
-            <div class="features__title">
+        <li class="feature__item">
+          <div class="feature__icon">
+            <svg class="feature__picture"></svg>
+          </div>
+          <div class="feature__text">
+            <div class="feature__title">
               Жилье
             </div>
             <p>
@@ -100,12 +102,12 @@
 
       <!-- Main  Features [2] -->
 
-        <li class="features__item">
-          <i class="features__icon">
-            <svg class="features__icon-pic"></svg>
-          </i>
-          <div class="features__text">
-            <div class="features__title">
+        <li class="feature__item">
+          <div class="feature__icon">
+            <svg class="feature__picture"></svg>
+          </div>
+          <div class="feature__text">
+            <div class="feature__title">
               Сувениры
             </div>
             <p>
@@ -116,12 +118,12 @@
 
       <!-- Main  Features [3] -->
 
-        <li class="features__item">
-          <i class="features__icon">
-            <svg class="features__icon-pic"></svg>
-          </i>
-          <div class="features__text">
-            <div class="features__title">
+        <li class="feature__item">
+          <div class="feature__icon">
+            <svg class="feature__picture"></svg>
+          </div>
+          <div class="feature__text">
+            <div class="feature__title">
               Еда
             </div>
             <p>
@@ -157,7 +159,7 @@
 
       <!-- Main  Advantages - brief [3] -->
 
-      <section class="advantages advantages-brief">
+      <section class="advantages advantages--brief">
         <div class="advantages__inner">
           <div class="advantages__text">
             <h2 class="advantages__title">
@@ -180,7 +182,7 @@
 
       <!-- Main  Advantages - brief [4] -->
 
-      <section class="advantages advantages-brief">
+      <section class="advantages advantages--brief">
         <div class="advantages__inner">
           <div class="advantages__text">
             <h2 class="advantages__title">
@@ -203,7 +205,7 @@
 
       <!-- Main  Advantages - brief [5] -->
 
-      <section class="advantages advantages-brief">
+      <section class="advantages advantages--brief">
         <div class="advantages__inner">
           <div class="advantages__text">
             <h2 class="advantages__title">
@@ -227,15 +229,14 @@
       <!-- Main  Booking -->
 
       <div class="common-section">
-        <div class="common-section__title common-section__title--upper-case">
+        <div class="common-section__title">
           Заинтересовались?
         </div>
         <p>
           Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a href="#" class="button">
-          Найти гостиницу
-        </a>
+        <!-- Может быть ссылкой, т.к. перенаправляет юзера на заполнение формы -->
+        <button class="button type="button">Найти гостиницу</button>
       </div>
 
       <!-- Main  Map -->
@@ -251,27 +252,28 @@
           #visitsedona
         </p>
         <div class="page-footer__social">
+
           <ul class="social-list">
 
             <li class="social-list__item">
-              <a href="" class="social-list__link">
-                <svg class="social-list__pic">
+              <a class="social-list__link" href="">
+                <svg class="social-list__picture">
 
                 </svg>
               </a>
             </li>
 
             <li class="social-list__item">
-              <a href="" class="social-list__link">
-                <svg class="social-list__pic">
+              <a class="social-list__link" href="">
+                <svg class="social-list__picture">
 
                 </svg>
               </a>
             </li>
 
             <li class="social-list__item">
-              <a href="" class="social-list__link">
-                <svg class="social-list__pic">
+              <a class="social-list__link" href="">
+                <svg class="social-list__picture">
 
                 </svg>
               </a>
@@ -281,11 +283,11 @@
         </div>
 
         <div class="page-footer__copyrights">
-          <span class="page-footer__copyrights-text">
+          <span class="page-footer__copyrights--text">
             Разработано
           </span>
-          <a href="#" class="page-footer__copyrights-link">
-            <svg class="page-footer__copyrights-logo">
+          <a class="page-footer__copyrights--link" href="#">
+            <svg class="page-footer__copyrights--logo">
 
             </svg>
           </a>

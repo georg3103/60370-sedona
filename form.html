@@ -11,42 +11,44 @@
 
       <header class="page-header">
         <nav class="main-nav">
-          <button class="main-nav__icon"></button>
+          <button class="main-nav__button btn-toggle" type="button"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="" class="main-nav__link" href="#">
+              <a class="main-nav__link" href="">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="" class="main-nav__link" href="#">
+              <a class="main-nav__link" href="">
                 Фото и видео
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="" class="main-nav__link" href="#">
+              <a class="main-nav__link" href="">
                 Форма отзыва
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="" class="main-nav__link" href="#">
+              <a class="main-nav__link" href="">
                 Html Academy
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--logo">
-              <a href="" class="main-nav__logo" href="#">
-                <img src="#" alt="Лого City of Sedona">
               </a>
             </li>
           </ul>
         </nav>
+        <div class="logo">
+          <a href="" class="logo__picture">
+            <img src="#" alt="Лого City of Sedona">
+          </a>
+        </div>
       </header>
 
       <!-- Main -->
 
       <div class="intro">
-        <img class="intro__banner" src="#" alt="Sedona Welcome to the generous">
+        <img class="intro__picture" src="#" alt="Sedona Welcome to the generous">
       </div>
+
+      <!-- The same -->
 
       <div class="common-section">
         <div class="common-section__title">
@@ -106,13 +108,13 @@
           Контактная информация
         </legend>
 
-        <div class="feedback__section-contacts">
-          <div class="textbox textbox-contacts">
-            <label class="textbox__title textbox__title-contacts" for="phone" >
+        <div class="feedback__section--contacts">
+          <div class="textbox textbox--contacts">
+            <label class="textbox__title textbox__title--contacts" for="phone" >
               Контактный телефон
             </label>
             <div class="textbox__inner">
-              <input class="textbox__input textbox__input-phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]">
+              <input class="textbox__input textbox__input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]">
             </div>
             <span class="textbox__warning">
               Ошибка, перепроверьте номер
@@ -120,11 +122,11 @@
           </div>
 
           <div class="textbox textbox-contacts">
-            <label class="textbox__title textbox__title-contacts" for="email" >
+            <label class="textbox__title textbox__title--contacts" for="email" >
               Электронная почта:
             </label>
             <div class="textbox__inner">
-              <input class="textbox__input textbox__input-email" type="email" name="email" id="email" placeholder="Введите email" pattern="[a-zA-Z]{2,}@[a-zA-Z]{2,}.[a-zA-Z]{2,}">
+              <input class="textbox__input textbox__input--email" type="email" name="email" id="email" placeholder="Введите email" pattern="[a-zA-Z]{2,}@[a-zA-Z]{2,}.[a-zA-Z]{2,}">
             </div>
             <span class="textbox__warning">
               Ошибка, перепроверьте адрес
@@ -139,7 +141,7 @@
 
       <fieldset class="feedback__section">
 
-        <legend class="feedback__section-title">
+        <legend class="feedback__section--title">
           Ваше общее впечатление:
         </legend>
 
@@ -176,7 +178,7 @@
 
       <fieldset class="feedback__section">
 
-      <legend class="feedback__section-title">
+      <legend class="feedback__section--title">
           Посещенные достопримечательности:
       </legend>
 
@@ -218,7 +220,7 @@
 
       <fieldset class="feedback__section">
 
-        <legend class="feedback__section-title">
+        <legend class="feedback__section--title">
           Опишите свои эмоции:
         </legend>
 
@@ -233,7 +235,7 @@
 
       <fieldset class="feedback__section">
 
-        <input class="button" type="submit" value="Отправить отзыв">
+        <button class="button" type="submit">Отправить отзыв</button>
 
       </fieldset>
 
@@ -246,27 +248,28 @@
           #visitsedona
         </p>
         <div class="page-footer__social">
+
           <ul class="social-list">
 
             <li class="social-list__item">
-              <a href="" class="social-list__link">
-                <svg class="social-list__pic">
+              <a class="social-list__link" href="">
+                <svg class="social-list__picture">
 
                 </svg>
               </a>
             </li>
 
             <li class="social-list__item">
-              <a href="" class="social-list__link">
-                <svg class="social-list__pic">
+              <a class="social-list__link" href="">
+                <svg class="social-list__picture">
 
                 </svg>
               </a>
             </li>
 
             <li class="social-list__item">
-              <a href="" class="social-list__link">
-                <svg class="social-list__pic">
+              <a class="social-list__link" href="">
+                <svg class="social-list__picture">
 
                 </svg>
               </a>
@@ -276,11 +279,11 @@
         </div>
 
         <div class="page-footer__copyrights">
-          <span class="page-footer__copyrights-text">
+          <span class="page-footer__copyrights--text">
             Разработано
           </span>
-          <a href="#" class="page-footer__copyrights-link">
-            <svg class="page-footer__copyrights-logo">
+          <a class="page-footer__copyrights--link" href="#">
+            <svg class="page-footer__copyrights--logo">
 
             </svg>
           </a>
