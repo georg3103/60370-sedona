@@ -3,14 +3,22 @@
 }
 
 .checkbox__item {
-
+  margin-bottom: 25px;
 }
 
 .checkbox__input {
-
+  padding: 0;
 }
 
 .checkbox__title {
-
+  position: relative;
+  display: block;
+  padding-left: 80px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 56px;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
 }
 

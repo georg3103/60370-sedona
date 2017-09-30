@@ -3,11 +3,20 @@
 }
 
 .feedback__section {
-
+  margin: 0 auto;
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  border: none;
 }
 
 .feedback__section--title {
-
+  display: block;
+  color: #000000;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .feedback__section--contacts {

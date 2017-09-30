@@ -1,21 +1,29 @@
 .posts {
-
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  color: #000000;
 }
 
 .posts__item {
-
+  padding: 23px 0;
+  font-size: 14px;
 }
 
 .posts__content {
-
+  margin: 0;
+  padding: 0;
 }
 
 .posts__photo {
-
+  display: block;
+  width: 280px;
+  height: 280px;
 }
 
 .posts__text {
-
+  margin-top: 15px;
 }
 
 .posts__description {
@@ -23,19 +31,22 @@
 }
 
 .posts__title {
-
+  font-weight: bold;
+  line-height: 25px;
 }
 
 .posts__author {
-
+  text-transform: none;
 }
 
 .posts__like {
-
+  margin-top: 5px;
 }
 
 .posts__like--icon-inner {
-
+  display: block;
+  width: 22px;
+  height: 20px;
 }
 
 .posts__like--icon {
@@ -43,7 +54,10 @@
 }
 
 .posts__like--number {
-
+  display: block;
+  height: 14px;
+  padding-left: 10px;
+  font-weight: bold;
 }
 
 
