@@ -1,13 +1,18 @@
 .page-footer {
-
+  margin: 0px 20px;
+  padding: 50px 0;
 }
 
 .page-footer__hashtag {
-
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  color: #000000;
 }
 
 .page-footer__social {
-
+  margin-bottom: 30px;
 }
 
 .page-footer__copyrights {
@@ -15,11 +20,16 @@
 }
 
 .page-footer__copyrights--text {
-
+  color: #000000;
+  padding-right: 12px;
+  line-height: 48px;
 }
 
 .page-footer__copyrights--link {
-
+  display: block;
+  width: 27px;
+  height: 48px;
+  padding-top: 5px;
 }
 
 .page-footer__copyrights--logo {
