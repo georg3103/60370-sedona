@@ -1,0 +1,32 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  background: url("../img/icon-cross.svg") no-repeat 50% 50%;
+  border: none;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.main-nav__link {
+  display: block;
+  color: #ffffff;
+  background-color: #81b3d2;
+
+  padding: 20px 0;
+}

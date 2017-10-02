@@ -1,0 +1,31 @@
+.features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #333333;
+}
+
+.feature__item {
+  line-height: 21px;
+  text-align: left;
+}
+
+.feature__icon {
+  display: block;
+  width: 37px;
+  height: 37px;
+}
+/*
+.feature__picture {
+
+}
+*/
+.feature__text {
+  padding-left: 20px;
+}
+
+.feature__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 37px;
+}

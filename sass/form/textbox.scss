@@ -1,0 +1,28 @@
+.textbox {
+  margin-bottom: 20px;
+}
+
+.textbox__title {
+  display: block;
+  padding-right: 20px;
+  line-height: 58px;
+}
+/*
+.textbox__inner {
+
+}
+*/
+.textbox__input {
+  height: 58px;
+  margin: 0;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  text-transform: none;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  border: none;
+}
