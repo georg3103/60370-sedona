@@ -1,8 +1,13 @@
+@import "global/variable.scss";
+
 .features {
   margin: 0;
   padding: 0;
   list-style: none;
   color: #333333;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .feature__item {
@@ -28,4 +33,19 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 37px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .features {
+    flex-direction: row;
+  }
+  .feature__item {
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-width: $desktop-width) {
+
+
 }

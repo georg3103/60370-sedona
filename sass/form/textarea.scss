@@ -1,9 +1,24 @@
 .textarea {
+  display: flex;
   margin-bottom: 20px;
   color: #000000;
 }
-/*
-.textarea__input {
 
+.textarea__input {
+  flex-grow: 1;
+  height: 130px;
+  margin: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+  text-transform: none;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  background-size: 58px 58px;
+  border: none;
+  outline: none;
 }
-*/
+

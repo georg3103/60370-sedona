@@ -1,20 +1,25 @@
 .textbox {
+  display: flex;
   margin-bottom: 20px;
 }
 
 .textbox__title {
   display: block;
+  padding-left: 10px;
   padding-right: 20px;
   line-height: 58px;
+  color: #000;
 }
-/*
-.textbox__inner {
 
+.textbox__inner {
+  display: flex;
+  width: 100%;
 }
-*/
+
 .textbox__input {
+  flex-grow: 1;
   height: 58px;
-  margin: 0;
+  margin: 0 10px;
   padding: 0 20px;
   font-weight: bold;
   font-size: 18px;
@@ -25,4 +30,29 @@
   background-repeat: no-repeat;
   background-position: right 50%;
   border: none;
+}
+
+.textbox--contacts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.textbox__warning {
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    display: block;
+    color: #ff5c5c;
+    text-transform: none;
+}
+
+.textbox__input--phone {
+  background-image: url("../img/icon-phone.svg");
+}
+
+.textbox__input--email {
+  background-image: url("../img/icon-mail.svg");
 }

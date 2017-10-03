@@ -1,17 +1,20 @@
+@import "global/variable.scss";
+
 .advantages {
   margin: 0;
   padding: 0;
 
   background-color: #81b3d2;
 }
-/*
-.advantages__inner {
 
+.advantages__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-*/
+
 .advantages__text {
-  width: 320px;
-  padding: 40px 20px;
+  padding: 20px 20px;
   line-height: 21px;
 }
 /*
@@ -26,9 +29,48 @@
 .advantages__photo {
   width: 320px;
   height: 260px;
+  padding-bottom: 20px;
 }
 
 .advantages--brief {
   background-color: #eeeeee;
   color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  list-style: none;
+}
+
+.advantages--brief__item {
+  margin: auto;
+}
+
+@media screen and (min-width: $tablet-width) {
+
+  .advantages__inner {
+    flex-direction: row;
+  }
+
+  .advantages--second .advantages__inner {
+    flex-direction: row-reverse;
+  }
+
+  .advantages__photo {
+    width: 512px;
+    padding-bottom: 0px;
+  }
+
+  .advantages--brief {
+    flex-direction: row;
+  }
+
+}
+
+@media screen and (min-width: $desktop-width) {
+
+  .advantages__photo {
+    width: 800px;
+  }
+
 }
