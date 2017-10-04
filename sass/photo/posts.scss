@@ -72,13 +72,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
-}
+  }
+
   .posts__item:first-child {
     display: block;
     width: 648px;
     background-color: #000000;
     margin: auto;
-}
+  }
+
   .posts__item {
     width: 324px;
   }
@@ -87,12 +89,14 @@
 @media screen and (min-width: $desktop-width) {
   .posts {
     width: auto;
-}
+  }
+
   .posts__item:first-child {
     width: 100%;
-    background-color: #000;
+    background-color: #000000;
     margin: auto;
-}
+  }
+
   .posts__item {
     width: 33.3%;
   }
