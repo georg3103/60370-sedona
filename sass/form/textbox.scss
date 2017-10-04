@@ -8,7 +8,7 @@
   padding-left: 10px;
   padding-right: 20px;
   line-height: 58px;
-  color: #000;
+  color: #000000;
 }
 
 .textbox__inner {
@@ -33,20 +33,20 @@
 }
 
 .textbox--contacts {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 45px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 45px;
 }
 
 .textbox__warning {
-    position: absolute;
-    top: 130px;
-    left: 20px;
-    display: block;
-    color: #ff5c5c;
-    text-transform: none;
+  position: absolute;
+  top: 130px;
+  left: 20px;
+  display: block;
+  color: #ff5c5c;
+  text-transform: none;
 }
 
 .textbox__input--phone {

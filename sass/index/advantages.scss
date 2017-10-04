@@ -47,7 +47,6 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-
   .advantages__inner {
     flex-direction: row;
   }
@@ -58,19 +57,16 @@
 
   .advantages__photo {
     width: 512px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .advantages--brief {
     flex-direction: row;
   }
-
 }
 
 @media screen and (min-width: $desktop-width) {
-
   .advantages__photo {
     width: 800px;
   }
-
 }
