@@ -30,12 +30,12 @@
 
 @media screen and (min-width: $tablet-width) {
   .checkbox__item {
-  width: 50%;
+    width: 50%;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
-.checkbox__item {
-  width: 25%;
+  .checkbox__item {
+    width: 25%;
   }
 }
