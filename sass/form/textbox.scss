@@ -1,3 +1,5 @@
+@import "global/variable.scss";
+
 .textbox {
   display: flex;
   margin-bottom: 20px;
@@ -20,7 +22,7 @@
   flex-grow: 1;
   height: 58px;
   margin: 0 10px;
-  padding: 0 20px;
+  padding: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
@@ -55,4 +57,30 @@
 
 .textbox__input--email {
   background-image: url("../img/icon-mail.svg");
+}
+
+@media screen and (min-width: $tablet-width) {
+  .textbox__title--contacts {
+    margin-bottom: 5px;
+    margin-left: 20px;
+    line-height: 25px;
+    text-align: left;
+  }
+
+  .textbox__warning {
+    top: 0px;
+    left: unset;
+    right: 0px;
+    font-weight: normal;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .textbox--contacts {
+    width: 50%;
+  }
+
+  .textbox__warning {
+    display: none;
+  }
 }

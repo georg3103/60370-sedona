@@ -8,15 +8,45 @@
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
+
   display: block;
+  width: 70px;
+  height: 50px;
   background: url("../img/icon-cross.svg") no-repeat 50% 50%;
   border: none;
+
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav__button--closed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 70px;
+  height: 50px;
+  background: url("../img/icon-cross.svg") no-repeat 50% 50%;
+  border: none;
+
+  cursor: pointer;
+  border: none;
+
+  background: url(../img/icon-menu.svg) no-repeat 50% 50%;
+  background-size: 23px 22px;
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.main-nav__list--closed {
+  display: none;
 }
 
 .main-nav__item {
@@ -52,6 +82,10 @@
   .main-nav__link {
     background-color: $light-color;
     color: $dark-color;
+  }
+
+  .main-nav__button {
+    display: none;
   }
 }
 
