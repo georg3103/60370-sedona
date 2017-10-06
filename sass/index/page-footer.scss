@@ -1,6 +1,13 @@
+@import "global/variable.scss";
+
 .page-footer {
   margin: 0 20px;
-  padding: 50px 0;
+  padding: 0;
+  min-height: 230px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .page-footer__hashtag {
@@ -14,11 +21,12 @@
 .page-footer__social {
   margin-bottom: 30px;
 }
-/*
-.page-footer__copyrights {
 
+.page-footer__copyrights {
+  display: flex;
+  justify-content: center;
 }
-*/
+
 .page-footer__copyrights--text {
   color: #000000;
   padding-right: 12px;
@@ -31,8 +39,16 @@
   height: 48px;
   padding-top: 5px;
 }
-/*
-.page-footer__copyrights--logo {
 
+.page-footer__copyrights--logo {
+  background-color: #000000;
+  width: 15px;
+  height: 15px;
 }
-*/
+
+@media screen and (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

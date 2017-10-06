@@ -1,6 +1,5 @@
-/*
 .video {
-
+  margin: 0 auto;
 }
 
 .video__window {
@@ -14,28 +13,26 @@
 
 .video__controls {
   position: relative;
-  min-height: 66px;
-  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 350px;
+  margin: 0 auto;
   background-color: #f2f2f2;
 }
 
 .video__scroll {
   position: absolute;
-  top: -45px;
-  left: 0;
+  top: -35px;
+  left: 35px;
   width: 280px;
   min-height: 45px;
-  background-color: rgba(0,0,0,.5);
+  background-color: #000000;
 }
 
 .video__button {
   width: 70px;
-  min-height: 66px;
   line-height: 0;
+  background: 0 0;
   border: none;
 }
-
-.video__icon {
-
-}
-*/

@@ -1,3 +1,5 @@
+@import "global/variable.scss";
+
 .main-nav {
   position: relative;
 }
@@ -6,15 +8,42 @@
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
+
   display: block;
+  width: 70px;
+  height: 50px;
   background: url("../img/icon-cross.svg") no-repeat 50% 50%;
   border: none;
+
+  cursor: pointer;
+}
+
+.main-nav__button--closed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 70px;
+  height: 50px;
+  border: none;
+
+  cursor: pointer;
+
+  background: url("../img/icon-menu.svg") no-repeat 50% 50%;
+  background-size: 23px 22px;
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.main-nav__list--closed {
+  display: none;
 }
 
 .main-nav__item {
@@ -27,6 +56,40 @@
   display: block;
   color: #ffffff;
   background-color: #81b3d2;
-
   padding: 20px 0;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__list {
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    margin: 0 auto;
+  }
+
+  .main-nav__link {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+
+  .main-nav__button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .main-nav__list {
+    width: 1200px;
+
+    min-height: 60px;
+  }
 }

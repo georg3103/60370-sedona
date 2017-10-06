@@ -1,10 +1,26 @@
+@import "global/variable.scss";
+
 .intro {
   margin: 0;
-  background-image: url("../img/bg-back-mobile.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: bottom;
 }
 
 .intro__picture {
-  padding: 90px;
+  padding: 90px 0;
+  width: 280px;
+}
+/*
+@media screen and (min-width: $tablet-width) {
+
+}
+*/
+@media screen and (min-width: $desktop-width) {
+  .intro {
+    background-size: auto, 1200px, 518px;
+  }
+
+  .intro__picture {
+    width: 460px;
+  }
 }
