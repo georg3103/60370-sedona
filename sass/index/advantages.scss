@@ -26,10 +26,17 @@
 
 }
 */
+.advantages__number::before {
+  content: "- ";
+}
+
+.advantages__number::after {
+    content: " -";
+}
+
 .advantages__photo {
   width: 320px;
   height: 260px;
-  padding-bottom: 20px;
 }
 
 .advantages--brief {
@@ -40,6 +47,11 @@
   align-items: center;
 
   list-style: none;
+}
+
+.advantages--brief__item .advantages__text {
+  padding: 10px 0;
+  margin: 0 50px;
 }
 
 .advantages--brief__item {

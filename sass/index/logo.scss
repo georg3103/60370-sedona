@@ -12,3 +12,16 @@
   height: 83px;
   margin: 0 auto;
 }
+
+@media screen and (min-width: $tablet-width) {
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+
+}

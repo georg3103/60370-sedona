@@ -11,6 +11,8 @@
 }
 
 .feature__item {
+      display: flex;
+    padding: 20px 5%;
   line-height: 21px;
   text-align: left;
 }
@@ -19,6 +21,7 @@
   display: block;
   width: 37px;
   height: 37px;
+  background-color: #81b3d2;
 }
 /*
 .feature__picture {
