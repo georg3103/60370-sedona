@@ -76,13 +76,22 @@
 
   .posts__item:first-child {
     display: block;
-    width: 648px;
-    background-color: #000000;
+    width: 650px;
     margin: auto;
   }
 
   .posts__item {
     width: 324px;
+  }
+
+  .posts__item:nth-child(1) .posts__photo {
+    width: 650px;
+    height: auto;
+  }
+
+  .posts__photo {
+    width: 324px;
+    height: auto;
   }
 }
 
@@ -93,8 +102,11 @@
 
   .posts__item:first-child {
     width: 100%;
-    background-color: #000000;
     margin: auto;
+  }
+
+  .posts__photo {
+    width: 1200px;
   }
 
   .posts__item {

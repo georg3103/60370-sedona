@@ -46,8 +46,8 @@
       <!-- Main -->
 
       <div class="intro">
-        <img class="intro__picture" src="img/text-sedona-index.svg" alt="Sedona Welcome to the generous" width="460"
-        height="350">
+        <img class="intro__picture" src="img/text-sedona-index.svg" alt="Sedona Welcome to the generous" width="320"
+        height="390">
       </div>
 
       <!-- The same -->
@@ -77,7 +77,11 @@
             </p>
           </div>
           <div class="advantages__photo">
-            <img src="img/main-city-mobile@1x.jpg" alt="Настоящий городок" width="320" height="260">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+              <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Настоящий городок">
+            </picture>
           </div>
         </div>
       </section>
@@ -152,7 +156,11 @@
             </p>
           </div>
           <div class="advantages__photo">
-            <img src="img/main-bridge-mobile@1x.jpg" alt="Мост Дьявола" width="320" height="260">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+              <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+            </picture>
           </div>
         </div>
       </section>

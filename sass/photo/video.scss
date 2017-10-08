@@ -1,3 +1,5 @@
+@import "global/variable.scss";
+
 .video {
   margin: 0 auto;
 }
@@ -35,4 +37,41 @@
   line-height: 0;
   background: 0 0;
   border: none;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .video__window {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .video__window {
+    background-image: url("../img/video-tablet@1x.jpg");
+    background-size: 650px 500px;
+    height: 500px;
+    width: 650px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .video__window {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .video__window {
+    background-image: url("../img/video-desktop@1x.jpg");
+    background-size: 800px auto;
+    width: 800px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .video__window {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
+  }
 }
