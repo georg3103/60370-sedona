@@ -11,22 +11,23 @@
   background-repeat: no-repeat;
   background-position: 50% top;
   background-size: 320px 201px;
+  position: relative;
 }
 
 .video__controls {
   position: relative;
   display: flex;
   justify-content: space-between;
-  height: 60px;
-  width: 350px;
+  min-height: 66px;
+  width: 280px;
   margin: 0 auto;
   background-color: #f2f2f2;
 }
 
 .video__scroll {
   position: absolute;
-  top: -35px;
-  left: 35px;
+  top: -44px;
+  left: 0;
   width: 280px;
   min-height: 45px;
   background-color: #000000;
@@ -37,6 +38,10 @@
   line-height: 0;
   background: 0 0;
   border: none;
+}
+
+.video__icon {
+  display: none;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -53,6 +58,25 @@
     width: 650px;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
+  }
+
+  .video__controls {
+    width: 648px;
+    height: 96px;
+    margin-top: -96px;
+    background-color: rgba(0,0,0,.5);
+    flex-direction: row;
+  }
+
+  .video__scroll {
+    position: unset;
+    top: unset;
+    left: unset;
+    flex-grow: 1;
+    width: 280px;
+    min-height: 45px;
+    background-color: #000000;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
