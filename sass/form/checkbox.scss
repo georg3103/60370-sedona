@@ -46,17 +46,16 @@
   color: #000000;
   text-transform: none;
   user-select: none;
-
-   &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 56px;
-    height: 56px;
-    border: none;
-    border-radius: 5px;
-    background-color: $darker-5pct-color;
-    left: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 56px;
+      height: 56px;
+      border: none;
+      border-radius: 5px;
+      background-color: $darker-5pct-color;
+      left: 0;
     }
     &:hover::before {
       background-color: $darker-10pct-color;
