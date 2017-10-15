@@ -2,7 +2,7 @@
 
 .page-footer {
   margin: 0 20px;
-  padding-top: 50px;
+  padding-top: 20px;
   min-height: 230px;
 
   display: flex;
@@ -50,5 +50,20 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-around;
+    min-height: 100px;
+  }
+
+  .page-footer__hashtag {
+    margin-bottom: 50px;
+  }
+
+  .page-footer__copyrights--text {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 120px;
   }
 }

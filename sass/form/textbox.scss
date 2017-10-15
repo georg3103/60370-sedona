@@ -7,13 +7,19 @@
 
 .textbox__title {
   display: block;
-  padding-top: 17px;
   padding-right: 15px;
-  line-height: 26px;
+  padding-top: 15px;
+   line-height: 26px;
   text-align: left;
   font-size: 14px;
   font-weight: normal;
   color: #000000;
+}
+
+.textbox__title--contacts {
+  padding-left: 24px;
+  padding-top: 0;
+  padding-bottom: 10px;
 }
 
 .textbox__inner {
@@ -86,6 +92,28 @@
   }
 
   .textbox__inner {
-    width: 320px;
+    width: 312px;
+  }
+
+  .textbox__inner--name {
+    width: 350px;
+  }
+
+  .feedback__section:nth-child(3) .feedback__section--title {
+    text-align: left;
+    margin-left: 70px;
+  }
+
+  .feedback__section:nth-child(1) .feedback__section--title {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .feedback__section:nth-child(2) .feedback__section--title {
+    margin: 0 auto;
+  }
+
+  .textbox__title--display {
+    display: none;
   }
 }

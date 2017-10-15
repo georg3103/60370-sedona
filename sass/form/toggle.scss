@@ -33,6 +33,7 @@
   font-size: 18px;
   line-height: 56px;
   text-align: left;
+  text-transform: none;
   color: #000000;
 
   &::before {
@@ -47,10 +48,12 @@
     background-color: $darker-5pct-color;
     left: 0;
   }
+
   &:hover::before {
     border-color: $darker-10pct-color;
     background-color: $darker-10pct-color;
   }
+
   &:active::before {
     border-color: $darker-16pct-color;
     background-color: $darker-16pct-color;

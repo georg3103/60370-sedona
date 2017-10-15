@@ -29,6 +29,10 @@
   height: 280px;
 }
 
+.posts__photo img {
+  display: block;
+}
+
 .posts__text {
   margin-top: 15px;
 }
@@ -47,7 +51,8 @@
 }
 
 .posts__like {
-  margin-top: 5px;
+  margin-top: 15px;
+  display: flex;
 }
 
 .posts__like--icon-inner {

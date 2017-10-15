@@ -12,11 +12,18 @@
   width: 100%;
   margin: 0 auto;
   padding: 20px 0;
+  padding-bottom: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
   border: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+.feedback__section:last-child {
+  padding-top: 30px;
+  border-top: none;
 }
 
 .feedback__section--title {
@@ -24,6 +31,7 @@
   color: #000000;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 .feedback__section--contacts {
@@ -31,14 +39,22 @@
   flex-wrap: wrap;
 }
 
+.feedback__section--deco {
+  display: none;
+}
+
+.feedback__section:nth-child(6) .feedback__section--wrapper {
+  display: flex;
+}
+
 @media screen and (min-width: $tablet-width) {
   .feedback__section:nth-child(1) {
-    width: 50%;
+    width: 45%;
     order: 2;
   }
 
   .feedback__section:nth-child(3) {
-    width: 50%;
+    width: 45%;
     order: 1;
   }
 
@@ -65,5 +81,64 @@
   .feedback__section .button {
     margin-left: 0;
     width: 50%;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .feedback__section:nth-child(3) .feedback__section--wrapper {
+    padding-left: 98px;
+  }
+
+  .feedback__section:nth-child(1) .feedback__section--wrapper {
+    padding-left: 98px;
+    padding-right: 84px;
+  }
+
+  .feedback__section:nth-child(2) .feedback__section--wrapper {
+    padding-left: 98px;
+    padding-right: 76px;
+  }
+
+  .feedback__section:nth-child(4) .feedback__section--wrapper {
+    padding-left: 98px;
+    padding-right: 65px;
+  }
+
+  .feedback__section:nth-child(5) .feedback__section--wrapper {
+    padding-left: 98px;
+    padding-right: 100px;
+  }
+
+  .feedback__section:nth-child(5) .feedback__section--title {
+    padding-bottom: 60px;
+  }
+
+  .feedback__section:nth-child(5) {
+    padding-top: 15px;
+  }
+
+  .feedback__section:nth-child(6) {
+    padding-left: 100px;
+  }
+
+  .feedback__section:nth-child(2) .textbox--contacts:nth-child(2) .textbox__title--contacts {
+    margin-left: 0;
+  }
+
+  .feedback__section--title {
+    padding-bottom: 65px;
+  }
+
+  .feedback__section--deco {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    line-height: 26px;
+    padding-right: 100px;
+  }
+
+  .feedback__section .button {
+    width: 480px;
   }
 }

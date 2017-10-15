@@ -3,6 +3,7 @@
 .features {
   margin: 0;
   padding: 0;
+  padding-bottom: 40px;
   list-style: none;
   color: #333333;
 
@@ -12,9 +13,13 @@
 
 .feature__item {
   display: flex;
-  padding: 20px 5%;
+  padding: 26px 5% 0;
   line-height: 21px;
   text-align: left;
+}
+
+.feature__item p {
+  margin: 0;
 }
 
 .feature__icon {
@@ -40,17 +45,37 @@
 
 @media screen and (min-width: $tablet-width) {
   .features {
+    min-height: 330px;
     flex-direction: row;
+    padding-bottom: 0;
   }
 
   .feature__item {
+    width: 33.3%;
     display: flex;
     flex-direction: column;
+    padding: 0 5%;
     min-height: 330px;
     text-align: center;
   }
 
   .feature__icon {
-    margin: 50px auto;
+    margin: 45px auto;
+  }
+
+  .feature__text {
+    padding-left: 0;
+  }
+
+  .feature__title {
+    padding-bottom: 10px;
+  }
+
+  .feature__item:nth-child(1) p {
+    padding: 0 4%;
+  }
+
+  .feature__item:nth-child(2) p {
+    padding: 0 6%;
   }
 }

@@ -15,19 +15,19 @@
   padding: 0;
   display: none;
 
-  &:checked + .checkbox-set__title::before {
+  &:checked + .checkbox__title::before {
     background: url("../img/icon-tick.svg") no-repeat 50% 50%;
   }
-  &:checked + .checkbox-set__title:hover::before {
+  &:checked + .checkbox__title:hover::before {
     background-color: $darker-10pct-color;
   }
-  &:checked + .checkbox-set__title:active::before {
+  &:checked + .checkbox__title:active::before {
     background-color: $darker-40pct-color;
     opacity: .45;
   }
-  &:disabled + .checkbox-set__title,
-  &:disabled + .checkbox-set__title:hover,
-  &:disabled + .checkbox-set__title:active {
+  &:disabled + .checkbox__title,
+  &:disabled + .checkbox__title:hover,
+  &:disabled + .checkbox__title:active {
     &::before {
       background-color: $darker-20pct-color;
       opacity: .1;
