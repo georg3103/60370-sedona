@@ -84,6 +84,7 @@
     display: block;
     width: 650px;
     margin: auto;
+    margin-top: 40px;
   }
 
   .posts__item {
@@ -106,11 +107,11 @@
     flex-direction: row;
     background-color: #f2f2f2;
     margin: 0;
-    padding: 20px;
+    padding: 15px 20px;
   }
 
   .posts__like {
-    padding-right: 20px;
+    padding-right: 0;
     margin-left: auto;
   }
 }
@@ -120,9 +121,14 @@
     width: auto;
   }
 
+  .posts__like {
+    padding-right: 20px;
+  }
+
   .posts__item:first-child {
     width: 100%;
     margin: auto;
+    margin-top: 35px;
   }
 
   .posts__item:first-child .posts__photo {
@@ -146,7 +152,7 @@
     width: 100%;
     color: #fff;
     background-color: rgba(0,0,0,.5);
-    padding: 20px 0;
+    padding: 15px 0;
   }
 
   .posts__description {

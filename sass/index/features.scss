@@ -79,3 +79,13 @@
     padding: 0 6%;
   }
 }
+
+@media screen and (min-width: $tablet-width) {
+  .feature__title {
+    padding-top: 25px;
+  }
+
+  .feature__item:first-child {
+    padding-left: 50px;
+  }
+}

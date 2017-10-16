@@ -131,5 +131,32 @@
     width: 800px;
     height: 256px;
     overflow: hidden;
+    margin-left: unset;
+  }
+
+  .advantages--second .advantages__photo {
+    margin-right: unset;
+  }
+
+  .advantages--first .advantages__title {
+    padding: 0 12%;
+    margin-top: 5px;
+  }
+
+  .advantages--first p {
+    padding: 0 5%;
+  }
+
+  .advantages--second .advantages__title {
+    padding: 0 20%;
+    margin-top: 5px;
+  }
+
+  .advantages--second p {
+    padding: 0 8%;
+  }
+
+  .advantages--brief p {
+    padding: 0;
   }
 }

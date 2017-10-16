@@ -48,6 +48,7 @@
 
 @media screen and (min-width: $tablet-width) {
   .page-footer {
+    margin-top: 70px;
     flex-direction: row;
     justify-content: space-around;
     min-height: 100px;
@@ -64,6 +65,6 @@
 
 @media screen and (min-width: $desktop-width) {
   .page-footer {
-    padding-top: 120px;
+    margin-top: 10px;
   }
 }

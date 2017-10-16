@@ -34,7 +34,19 @@
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-position: center 0;
     background-size: cover;
+    height: 290px;
+  }
+
+  .intro--first-page {
+    background-position: center 0;
+    background-size: cover;
     height: 520px;
+  }
+
+  .intro__picture {
+    padding-top: 100px;
+    width: 460px;
+    height: 75px;
   }
 
   .intro--first-page .intro__picture {

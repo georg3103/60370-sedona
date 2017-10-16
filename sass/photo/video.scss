@@ -93,6 +93,11 @@
     width: 800px;
   }
 
+  .video {
+    margin-top: 60px;
+    margin-bottom: 85px;
+  }
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .video__window {
       background-image: url("../img/video-desktop@2x.jpg");
