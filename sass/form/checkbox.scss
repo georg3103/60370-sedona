@@ -18,19 +18,23 @@
   &:checked + .checkbox__title::before {
     background: url("../img/icon-tick.svg") no-repeat 50% 50%;
   }
+
   &:checked + .checkbox__title:hover::before {
     background-color: $darker-10pct-color;
   }
+
   &:checked + .checkbox__title:active::before {
     background-color: $darker-40pct-color;
-    opacity: .45;
+    opacity: 0.45;
   }
+
   &:disabled + .checkbox__title,
   &:disabled + .checkbox__title:hover,
   &:disabled + .checkbox__title:active {
+
     &::before {
       background-color: $darker-20pct-color;
-      opacity: .1;
+      opacity: 0.1;
     }
   }
 }
@@ -46,6 +50,7 @@
   color: #000000;
   text-transform: none;
   user-select: none;
+
     &::before {
       content: "";
       position: absolute;
@@ -57,9 +62,11 @@
       background-color: $darker-5pct-color;
       left: 0;
     }
+
     &:hover::before {
       background-color: $darker-10pct-color;
     }
+
     &:active::before {
       background-color: $darker-40pct-color;
       opacity: .45;

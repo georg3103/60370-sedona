@@ -8,19 +8,23 @@
 
 .toggle__input {
   display: none;
+
   &:checked + .toggle__title::before {
     background-color: $darker-80pct-color;
   }
+
   &:checked + .toggle__title:active::before {
     background-color: $darker-36pct-color;
   }
+
   &:disabled + .toggle__title,
   &:disabled + .toggle__title:hover,
   &:disabled + .toggle__title:active {
+
     &::before {
       background-color: $darker-20pct-color;
       border-color: $darker-20pct-color;
-      opacity: .1;
+      opacity: 0.1;
     }
   }
 }
