@@ -31,7 +31,6 @@
   &:disabled + .checkbox__title,
   &:disabled + .checkbox__title:hover,
   &:disabled + .checkbox__title:active {
-
     &::before {
       background-color: $darker-20pct-color;
       opacity: 0.1;
@@ -51,26 +50,26 @@
   text-transform: none;
   user-select: none;
 
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 56px;
-      height: 56px;
-      border: none;
-      border-radius: 5px;
-      background-color: $darker-5pct-color;
-      left: 0;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 5px;
+    background-color: $darker-5pct-color;
+    left: 0;
+  }
 
-    &:hover::before {
-      background-color: $darker-10pct-color;
-    }
+  &:hover::before {
+    background-color: $darker-10pct-color;
+  }
 
-    &:active::before {
-      background-color: $darker-40pct-color;
-      opacity: .45;
-    }
+  &:active::before {
+    background-color: $darker-40pct-color;
+    opacity: 0.45;
+  }
 }
 
 @media screen and (min-width: $tablet-width) {

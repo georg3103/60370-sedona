@@ -20,7 +20,6 @@
   &:disabled + .toggle__title,
   &:disabled + .toggle__title:hover,
   &:disabled + .toggle__title:active {
-
     &::before {
       background-color: $darker-20pct-color;
       border-color: $darker-20pct-color;
