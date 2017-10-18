@@ -55,6 +55,10 @@
   display: flex;
 }
 
+.posts__like--icon {
+  fill: #b2b2b2;
+}
+
 .posts__like--icon-inner {
   display: block;
   width: 22px;
@@ -108,6 +112,10 @@
     background-color: #f2f2f2;
     margin: 0;
     padding: 15px 20px;
+  }
+
+  .posts__like--icon {
+    fill: #ffffff;
   }
 
   .posts__like {

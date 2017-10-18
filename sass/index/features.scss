@@ -26,7 +26,6 @@
   display: block;
   width: 37px;
   height: 37px;
-  background-color: #81b3d2;
 }
 /*
 .feature__picture {
@@ -87,5 +86,10 @@
 
   .feature__item:first-child {
     padding-left: 50px;
+  }
+
+  .feature__icon {
+    width: 82px;
+    height: 73px;
   }
 }

@@ -30,7 +30,22 @@
   left: 0;
   width: 280px;
   min-height: 45px;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &::before {
+    right: 22px;
+    background-color: rgba(255, 255, 255, 0.3);
+    left: 22px;
+    height: 4px;
+  }
+
+  &::after {
+    left: 50px;
+    width: 9px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
 }
 
 .video__button {
@@ -38,6 +53,10 @@
   line-height: 0;
   background: 0 0;
   border: none;
+}
+
+.video__button:nth-child(3) {
+  margin-left: 90px;
 }
 
 .video__icon {
@@ -76,7 +95,6 @@
     flex-grow: 1;
     width: 280px;
     min-height: 45px;
-    background-color: #000000;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -96,6 +114,10 @@
   .video {
     margin-top: 60px;
     margin-bottom: 85px;
+  }
+
+  .video__controls {
+    width: 800px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
