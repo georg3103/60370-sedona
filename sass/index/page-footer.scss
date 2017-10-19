@@ -46,6 +46,18 @@
   height: 15px;
 }
 
+.page-footer__copyrights--picture {
+  fill: $logo;
+
+  &:hover {
+    fill: $logo-hover;
+  }
+
+  &:active {
+    fill: $logo-down;
+  }
+}
+
 @media screen and (min-width: $tablet-width) {
   .page-footer {
     margin-top: 70px;

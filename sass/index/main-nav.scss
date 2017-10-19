@@ -57,6 +57,32 @@
   color: #ffffff;
   background-color: #81b3d2;
   padding: 15px 0;
+
+  &:hover {
+    color: $light-color;
+    background-color: $mobile-menu-hover;
+  }
+  &:active {
+    color: $mobile-menu-item-down;
+    background-color: $mobile-menu-down;
+  }
+  @media screen and (min-width: $tablet-width) {
+    color: $main-nav-item;
+    background-color: $light-color;
+    &:hover {
+      background-color: $light-color;
+      color: $main-nav-hover;
+    }
+    &:active {
+      background-color: $light-color;
+      color: $main-nav-hover;
+    }
+  }
+}
+
+.main-nav__link--active {
+  color: $mobile-menu-item-down;
+  background-color: $mobile-menu-down;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -89,6 +115,18 @@
 
   .main-nav__button {
     display: none;
+  }
+
+  .main-nav__link--active {
+    color: $main-nav-active;
+
+    &:hover {
+      color: $main-nav-active-hover;
+    }
+
+    &:active {
+      color: $main-nav-active-down;
+    }
   }
 }
 

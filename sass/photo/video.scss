@@ -63,6 +63,18 @@
   display: none;
 }
 
+.posts__like--icon-video {
+  fill: $video-btn;
+
+  &:hover {
+    fill: $video-btn-hover;
+  }
+
+  &:active {
+    fill: $video-btn-down;
+  }
+}
+
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .video__window {
     background-image: url("../img/video-mobile@2x.jpg");

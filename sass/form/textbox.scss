@@ -37,10 +37,18 @@
   line-height: 25px;
   color: #000000;
   text-transform: none;
-  background-color: #f2f2f2;
+  background-color: $input;
   background-repeat: no-repeat;
   background-position: 95%;
   border: none;
+
+  &:hover {
+    background-color: $input-hover;
+  }
+
+  &:active {
+    background-color: $input-down;
+  }
 }
 
 .textbox--contacts {

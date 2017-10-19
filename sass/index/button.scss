@@ -7,8 +7,18 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 58px;
-  color: #ffffff;
+  color: $button-item;
   text-transform: uppercase;
-  background-color: #81b3d2;
+  background-color: $button-bg;
   border: none;
+
+  &:hover {
+    color: $button-item-hover;
+    background-color: $button-bg-hover;
+  }
+
+  &:active {
+    color: $button-item-down;
+    background-color: $button-bg-down;
+  }
 }

@@ -20,20 +20,18 @@
   }
 
   &:checked + .checkbox__title:hover::before {
-    background-color: $darker-10pct-color;
+    background-color: $checkbox-bg-hover;
   }
 
   &:checked + .checkbox__title:active::before {
-    background-color: $darker-40pct-color;
-    opacity: 0.45;
+    background-color: $checkbox-bg-down;
   }
 
   &:disabled + .checkbox__title,
   &:disabled + .checkbox__title:hover,
   &:disabled + .checkbox__title:active {
     &::before {
-      background-color: $darker-20pct-color;
-      opacity: 0.1;
+      background-color: $checkbox-bg-down;
     }
   }
 }
@@ -58,17 +56,20 @@
     height: 56px;
     border: none;
     border-radius: 5px;
-    background-color: $darker-5pct-color;
+    background-color: $checkbox-bg;
     left: 0;
   }
 
   &:hover::before {
-    background-color: $darker-10pct-color;
+    background-color: $checkbox-bg-hover;
   }
 
   &:active::before {
-    background-color: $darker-40pct-color;
-    opacity: 0.45;
+    background-color: $checkbox-bg-down;
+  }
+
+  &:checked::before {
+    background-color: $checkbox-bg-down;
   }
 }
 
