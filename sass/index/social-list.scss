@@ -19,11 +19,30 @@
 
 .social-list__link {
   display: block;
-  width: 48px;
-  height: 48px;
-  padding-top: 13px;
-  color: #ffffff;
-  background-color: #81b3d2;
+  width: 45px;
+  height: 45px;
+  color: $social-item;
+  background-color: $social-bg;
+
+  &:hover {
+    background-color: $social-bg-hover;
+  }
+
+  &:active {
+    background-color: $social-bg-down;
+  }
+}
+
+.social-list__picture {
+  fill: $social-item;
+
+  &:hover {
+    fill: $social-item-hover;
+  }
+
+  &:active {
+    fill: $social-item-down;
+  }
 }
 /*
 .social-list__picture {

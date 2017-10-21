@@ -1,3 +1,5 @@
+@import "global/variable.scss";
+
 .textarea {
   display: flex;
   margin-bottom: 20px;
@@ -7,7 +9,6 @@
 .textarea__input {
   flex-grow: 1;
   height: 130px;
-  margin: 10px;
   padding: 10px 20px;
   font-weight: bold;
   font-size: 18px;
@@ -20,4 +21,16 @@
   background-size: 58px 58px;
   border: none;
   outline: none;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .textarea {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .textarea {
+    padding: 0;
+  }
 }
