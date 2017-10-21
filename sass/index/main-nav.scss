@@ -62,17 +62,21 @@
     color: $light-color;
     background-color: $mobile-menu-hover;
   }
+
   &:active {
     color: $mobile-menu-item-down;
     background-color: $mobile-menu-down;
   }
+
   @media screen and (min-width: $tablet-width) {
     color: $main-nav-item;
     background-color: $light-color;
+
     &:hover {
       background-color: $light-color;
       color: $main-nav-hover;
     }
+
     &:active {
       background-color: $light-color;
       color: $main-nav-hover;
