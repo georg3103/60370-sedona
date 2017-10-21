@@ -21,8 +21,11 @@
     transform: translateX(-50%);
   }
 }
-/*
-@media screen and (min-width: $desktop-width) {
 
+@media screen and (min-width: $desktop-width) {
+  .logo__picture {
+    width: 187px;
+    height: 96px;
+  }
 }
-*/
+

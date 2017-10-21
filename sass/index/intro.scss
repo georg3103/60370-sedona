@@ -32,8 +32,8 @@
 @media screen and (min-width: $tablet-width) {
   .intro {
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
-    background-position: center 0;
-    background-size: cover;
+    background-position: bottom left, center 0;
+    background-size: 100% 65px, cover;
     height: 290px;
   }
 
@@ -64,8 +64,8 @@
 @media screen and (min-width: $desktop-width) {
   .intro {
     background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
-    background-position: center 0;
-    background-size: cover;
+    background-position: bottom left, center 0;
+    background-size: 100% 57px, cover;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
