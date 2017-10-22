@@ -16,7 +16,10 @@
   display: none;
 
   &:checked + .checkbox__title::before {
-    background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: $checkbox-bg;
   }
 
   &:checked + .checkbox__title:hover::before {
