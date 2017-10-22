@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+<!-- SVG sprite -->
+
+    <?php include_once("img/sprite.svg"); ?>
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <div class="wrapper">
 
       <!-- HEADER -->
@@ -15,22 +24,22 @@
           <button class="main-nav__button" type="button"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link main-nav__link--active" href="#">
                 Фото и видео
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link" href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">
                 Html Academy
               </a>
             </li>
@@ -38,7 +47,11 @@
         </nav>
         <div class="logo">
           <a href="#" class="logo__picture">
-            <img src="img/logo-sedona-mobile.svg" alt="Лого City of Sedona" width="102" height="83">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img src="img/logo-sedona-mobile.svg" alt="Лого City of Sedona">
+            </picture>
           </a>
         </div>
       </header>
@@ -46,17 +59,17 @@
       <!-- Main -->
 
       <div class="intro">
-        <img class="intro__picture" src="img/text-sedona.svg" alt="Sedona Welcome to the generous" width="460" height="80">
+        <img class="intro__picture" src="img/text-sedona.svg" alt="Sedona Welcome to the generous" width="220" height="40">
       </div>
 
       <!-- The same -->
 
-      <div class="common-section">
-        <div class="common-section__title common-section__title--upper-case">
+      <div class="common-section common-section--photo">
+        <div class="common-section__title common-section__title--big">
           Фото и видео
         </div>
         <p>
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+          Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.
         </p>
       </div>
 
@@ -69,7 +82,11 @@
         <li class="posts__item">
           <figure class="posts__content">
             <a href="#" class="posts__photo">
-              <img src="img/photo-sunset-mobile@1x.jpg" alt="неродные просторы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="неродные просторы">
+              </picture>
             </a>
             <figcaption class="posts__text">
               <div class="posts__description">
@@ -82,8 +99,9 @@
               </div>
               <div class="posts__like">
                 <div class="posts__like--icon-inner">
-                  <svg class="posts__like--icon">
-
+                  <svg class="posts__like--icon" width="25px" height="25px" fill="#b2b2b2">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-like">
+                    </use>
                   </svg>
                 </div>
                 <span class="posts__like--number">
@@ -99,7 +117,11 @@
         <li class="posts__item">
           <figure class="posts__content">
             <a href="#" class="posts__photo">
-              <img src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
+              </picture>
             </a>
             <figcaption class="posts__text">
               <div class="posts__description">
@@ -112,8 +134,9 @@
               </div>
               <div class="posts__like">
                 <div class="posts__like--icon-inner">
-                  <svg class="posts__like--icon">
-
+                  <svg class="posts__like--icon" width="25px" height="25px" fill="#b2b2b2">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-like">
+                    </use>
                   </svg>
                 </div>
                 <span class="posts__like--number">
@@ -129,7 +152,11 @@
         <li class="posts__item">
           <figure class="posts__content">
             <a href="#" class="posts__photo">
-              <img src="img/photo-roads-mobile@1x.jpg" alt="Дорога на Север">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на Север">
+              </picture>
             </a>
             <figcaption class="posts__text">
               <div class="posts__description">
@@ -142,8 +169,9 @@
               </div>
               <div class="posts__like">
                 <div class="posts__like--icon-inner">
-                  <svg class="posts__like--icon">
-
+                  <svg class="posts__like--icon" width="25px" height="25px" fill="#b2b2b2">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-like">
+                    </use>
                   </svg>
                 </div>
                 <span class="posts__like--number">
@@ -159,7 +187,11 @@
         <li class="posts__item">
           <figure class="posts__content">
             <a href="#" class="posts__photo">
-              <img src="img/photo-bridge-mobile@1x.jpg" alt="Мост Дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+              </picture>
             </a>
             <figcaption class="posts__text">
               <div class="posts__description">
@@ -172,8 +204,9 @@
               </div>
               <div class="posts__like">
                 <div class="posts__like--icon-inner">
-                  <svg class="posts__like--icon">
-
+                  <svg class="posts__like--icon" width="25px" height="25px">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-like">
+                    </use>
                   </svg>
                 </div>
                 <span class="posts__like--number">
@@ -188,12 +221,12 @@
 
       <!-- Main Presentation -->
 
-      <div class="common-section">
-        <div class="common-section__title">
+      <div class="common-section common-section--photo">
+        <div class="common-section__title common-section__title--big">
           Все еще сомневаетесь?
         </div>
         <p>
-          Смотрите видеопрезентацию и скорее за билетам, пока они не подорожали в очередной раз!
+          Смотрите видеопрезентацию и&nbsp;скорее за&nbsp;билетам, пока они не&nbsp;подорожали в&nbsp;очередной раз!
         </p>
       </div>
 
@@ -206,20 +239,27 @@
           </video>
         </div>
         <div class="video__controls">
+          <button class="video__button">
+            <svg class="posts__like--icon-video" width="18px" height="21px">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video-replay">
+              </use>
+            </svg>
+          </button>
 
           <div class="video__scroll">
-
           </div>
 
           <button class="video__button">
-            <svg class="video__icon">
-
+            <svg class="posts__like--icon-video" width="33px" height="21px">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video-subtitles">
+              </use>
             </svg>
           </button>
 
           <button class="video__button">
-            <svg class="video__icon">
-
+            <svg class="posts__like--icon-video" width="21px" height="21px">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video-fullscreen">
+              </use>
             </svg>
           </button>
 
@@ -238,24 +278,27 @@
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture">
-
+                <svg class="social-list__picture" width="17px" heigh="15px" fill="#ffffff">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter">
+                  </use>
                 </svg>
               </a>
             </li>
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture">
-
+                <svg class="social-list__picture" width="8.672" heigh="18.944"  fill="#ffffff">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook">
+                  </use>
                 </svg>
               </a>
             </li>
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture">
-
+                <svg class="social-list__picture" width="17px" heigh="15px"  fill="#ffffff">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube">
+                  </use>
                 </svg>
               </a>
             </li>
@@ -268,8 +311,9 @@
             Разработано
           </span>
           <a class="page-footer__copyrights--link" href="#">
-            <svg class="page-footer__copyrights--logo">
-
+            <svg class="page-footer__copyrights--picture" width="32px" heigh="37px" fill="#000000">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy">
+                </use>
             </svg>
           </a>
         </div>
@@ -278,5 +322,6 @@
 
     </div>
     <script src="js/main.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

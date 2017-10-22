@@ -2,7 +2,7 @@
 
 .page-footer {
   margin: 0 20px;
-  padding: 0;
+  padding-top: 20px;
   min-height: 230px;
 
   display: flex;
@@ -46,9 +46,37 @@
   height: 15px;
 }
 
+.page-footer__copyrights--picture {
+  fill: $logo;
+
+  &:hover {
+    fill: $logo-hover;
+  }
+
+  &:active {
+    fill: $logo-down;
+  }
+}
+
 @media screen and (min-width: $tablet-width) {
   .page-footer {
+    margin-top: 70px;
     flex-direction: row;
     justify-content: space-around;
+    min-height: 100px;
+  }
+
+  .page-footer__hashtag {
+    margin-bottom: 50px;
+  }
+
+  .page-footer__copyrights--text {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .page-footer {
+    margin-top: 10px;
   }
 }

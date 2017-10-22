@@ -13,6 +13,7 @@
 }
 
 .posts__item {
+  position: relative;
   padding: 23px 0;
   font-size: 14px;
 }
@@ -26,6 +27,10 @@
   display: block;
   width: 280px;
   height: 280px;
+}
+
+.posts__photo img {
+  display: block;
 }
 
 .posts__text {
@@ -46,7 +51,12 @@
 }
 
 .posts__like {
-  margin-top: 5px;
+  margin-top: 15px;
+  display: flex;
+}
+
+.posts__like--icon {
+  fill: $light-color;
 }
 
 .posts__like--icon-inner {
@@ -76,13 +86,41 @@
 
   .posts__item:first-child {
     display: block;
-    width: 648px;
-    background-color: #000000;
+    width: 650px;
     margin: auto;
+    margin-top: 40px;
   }
 
   .posts__item {
     width: 324px;
+    padding: 0;
+  }
+
+  .posts__item:nth-child(1) .posts__photo {
+    width: 650px;
+    height: auto;
+  }
+
+  .posts__photo {
+    width: 324px;
+    height: auto;
+  }
+
+  .posts__text {
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 15px 20px;
+  }
+
+  .posts__like--icon {
+    fill: #ffffff;
+  }
+
+  .posts__like {
+    padding-right: 0;
+    margin-left: auto;
   }
 }
 
@@ -91,13 +129,41 @@
     width: auto;
   }
 
+  .posts__like {
+    padding-right: 20px;
+  }
+
   .posts__item:first-child {
     width: 100%;
-    background-color: #000000;
     margin: auto;
+    margin-top: 35px;
+  }
+
+  .posts__item:first-child .posts__photo {
+    width: 1200px;
+    height: auto;
+  }
+
+  .posts__photo {
+    width: 400px;
+    height: auto;
   }
 
   .posts__item {
     width: 33.3%;
+    padding: 0;
+  }
+
+  .posts__text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+  }
+
+  .posts__description {
+    padding-left: 20px;
   }
 }

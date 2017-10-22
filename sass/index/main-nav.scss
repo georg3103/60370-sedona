@@ -57,6 +57,7 @@
   color: #ffffff;
   background-color: #81b3d2;
   padding: 15px 0;
+
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -90,12 +91,22 @@
   .main-nav__button {
     display: none;
   }
+
+  .main-nav__link--active {
+    color: $main-nav-active;
+
+    &:hover {
+      color: $main-nav-active-hover;
+    }
+
+    &:active {
+      color: $main-nav-active-down;
+    }
+  }
 }
 
 @media screen and (min-width: $desktop-width) {
   .main-nav__list {
-    width: 1200px;
-
     min-height: 60px;
   }
 }

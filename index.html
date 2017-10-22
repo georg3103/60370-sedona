@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+    <!-- SVG sprite -->
+
+    <?php include_once("img/sprite.svg"); ?>
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <div class="wrapper">
 
       <!-- HEADER -->
@@ -15,22 +24,22 @@
           <button class="main-nav__button" type="button"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link main-nav__link--active" href="#">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link" href="photo.html">
                 Фото и видео
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link" href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">
                 Html Academy
               </a>
             </li>
@@ -38,32 +47,36 @@
         </nav>
         <div class="logo">
           <a href="#" class="logo__picture">
-            <img src="img/logo-sedona-mobile.svg" alt="Лого City of Sedona" width="102" height="83">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img src="img/logo-sedona-mobile.svg" alt="Лого City of Sedona">
+            </picture>
           </a>
         </div>
       </header>
 
       <!-- Main -->
 
-      <div class="intro">
-        <img class="intro__picture" src="img/text-sedona-index.svg" alt="Sedona Welcome to the generous" width="460"
-        height="350">
+      <div class="intro intro--first-page">
+        <img class="intro__picture" src="img/text-sedona-index.svg" alt="Sedona Welcome to the generous" width="320"
+        height="390">
       </div>
 
       <!-- The same -->
 
-      <div class="common-section">
+      <div class="common-section common-section--index">
         <div class="common-section__title">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
+          Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!
         </div>
         <p>
-          Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!
+          Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче чем Гранд Каньон!
         </p>
       </div>
 
       <!-- Main  Advantages [1] -->
 
-      <section class="advantages">
+      <section class="advantages advantages--first">
         <div class="advantages__inner">
           <div class="advantages__text">
             <h2 class="advantages__title">
@@ -73,11 +86,15 @@
               №1
             </p>
             <p>
-              Седона не аттракцион для туристов, там течет своя жизнь
+              Седона не&nbsp;аттракцион для туристов, там течет своя жизнь
             </p>
           </div>
           <div class="advantages__photo">
-            <img src="img/main-city-mobile@1x.jpg" alt="Настоящий городок" width="320" height="260">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+              <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Настоящий городок">
+            </picture>
           </div>
         </div>
       </section>
@@ -90,14 +107,17 @@
 
         <li class="feature__item">
           <div class="feature__icon">
-            <svg class="feature__picture"></svg>
+            <svg class="feature__picture"  width="100%" height="auto" fill="#a1c6dd">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-house">
+              </use>
+            </svg>
           </div>
           <div class="feature__text">
             <div class="feature__title">
               Жилье
             </div>
             <p>
-              Рекомендуем пожить в настоящем мотеле, все как в кино!
+              Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!
             </p>
           </div>
         </li>
@@ -106,14 +126,17 @@
 
         <li class="feature__item">
           <div class="feature__icon">
-            <svg class="feature__picture"></svg>
+            <svg class="feature__picture" width="100%" height="auto"  fill="#a1c6dd">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-burger">
+              </use>
+            </svg>
           </div>
           <div class="feature__text">
             <div class="feature__title">
-              Сувениры
+              Еда
             </div>
             <p>
-              Не только китайского, но и местного производства!
+              Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
             </p>
           </div>
         </li>
@@ -122,14 +145,17 @@
 
         <li class="feature__item">
           <div class="feature__icon">
-            <svg class="feature__picture"></svg>
+            <svg class="feature__picture"  width="100%" height="auto"  fill="#a1c6dd">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-gift">
+              </use>
+            </svg>
           </div>
           <div class="feature__text">
             <div class="feature__title">
-              Еда
+              Сувениры
             </div>
             <p>
-              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+              Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!
             </p>
           </div>
         </li>
@@ -148,11 +174,15 @@
               №2
             </p>
             <p>
-              Да, по нему можно пройти! Если конечно вы осмелитесь
+              Да, по&nbsp;нему можно пройти! Если Вы&nbsp;осмелитесь конечно
             </p>
           </div>
           <div class="advantages__photo">
-            <img src="img/main-bridge-mobile@1x.jpg" alt="Мост Дьявола" width="320" height="260">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+              <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+            </picture>
           </div>
         </div>
       </section>
@@ -172,7 +202,7 @@
                 №3
               </p>
               <p>
-                Все достопримечательности находятся очень близко
+                Все интересные места находятся очень близко
               </p>
             </div>
             <!-- No picture
@@ -194,7 +224,7 @@
                 №4
               </p>
               <p>
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
+                Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!
               </p>
             </div>
             <!-- No picture
@@ -215,7 +245,7 @@
                 №5
               </p>
               <p>
-                Большинство едет в Гранд Каньон и толпится там
+                Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там
               </p>
             </div>
             <!-- No picture
@@ -228,21 +258,24 @@
       </ul>
       <!-- Main  Booking -->
 
-      <div class="common-section">
-        <div class="common-section__title">
+      <div class="common-section common-section--index">
+        <div class="common-section__title common-section__title--big">
           Заинтересовались?
         </div>
         <p>
-          Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне
         </p>
         <!-- Может быть ссылкой, т.к. перенаправляет юзера на заполнение формы -->
+
         <a class="button">Найти гостиницу</a>
+
       </div>
 
       <!-- Main  Map -->
 
       <div class="map">
         <!-- map code -->
+        <iframe class="map__source" src="https://www.google.com/maps/d/embed?mid=zgoB38dwcy1c.kicKgWgtcwcc"></iframe>
       </div>
 
       <!-- Footer -->
@@ -257,24 +290,27 @@
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture" width="17px" heigh="15px">
-
+                <svg class="social-list__picture" width="17px" heigh="15px" fill="#ffffff">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter">
+                  </use>
                 </svg>
               </a>
             </li>
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture" width="17px" heigh="15px">
-
+                <svg class="social-list__picture" width="8.672" heigh="18.944"  fill="#ffffff">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook">
+                  </use>
                 </svg>
               </a>
             </li>
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture" width="17px" heigh="15px">
-
+                <svg class="social-list__picture" width="17px" heigh="15px"  fill="#ffffff">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube">
+                  </use>
                 </svg>
               </a>
             </li>
@@ -287,8 +323,9 @@
             Разработано
           </span>
           <a class="page-footer__copyrights--link" href="#">
-            <svg class="page-footer__copyrights--logo"  width="15px" heigh="15px">
-
+            <svg class="page-footer__copyrights--picture" width="32px" heigh="37px" fill="#000000">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy">
+                </use>
             </svg>
           </a>
         </div>
@@ -297,5 +334,6 @@
 
     </div>
     <script src="js/main.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
