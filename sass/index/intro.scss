@@ -6,8 +6,8 @@
   min-height: 158px;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% bottom;
-  background-size: auto, auto;
+  background-position: bottom left, center 0;
+  background-size: 100% 27px, cover;
 }
 
 .intro__picture {
@@ -16,6 +16,8 @@
 
 .intro--first-page {
   min-height: 389px;
+  background-position: bottom left, center 0;
+  background-size: 100% 27px, cover;
 }
 
 .intro--first-page .intro__picture {
@@ -38,8 +40,8 @@
   }
 
   .intro--first-page {
-    background-position: center 0;
-    background-size: cover;
+    background-position: bottom left, center 0;
+    background-size: 100% 57px, cover;
     height: 520px;
   }
 
