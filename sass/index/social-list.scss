@@ -35,6 +35,9 @@
 
 .social-list__picture {
   fill: $social-item;
+  width: 17px;
+  height: 15px;
+  padding: 15px;
 
   &:hover {
     fill: $social-item-hover;
@@ -43,11 +46,4 @@
   &:active {
     fill: $social-item-down;
   }
-}
-
-.social-list__picture {
-  fill: $social-item;
-  width: 17px;
-  height: 15px;
-  padding: 15px;
 }
