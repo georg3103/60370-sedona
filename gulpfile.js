@@ -15,6 +15,7 @@ var include = require("posthtml-include");
 var del = require("del");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
+var cheerio = require('gulp-cheerio');
 
 gulp.task("style", function () {
   gulp.src("sass/style.scss")
@@ -47,7 +48,13 @@ gulp.task ("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("img/icon-*.svg")
+  return gulp.src("img/*.svg")
+  .pipe(cheerio({
+    run: function ($) {
+      $('[fill]').removeAttr('fill');
+    },
+      parserOptions: { xmlMode: true }
+  }))
   .pipe(svgstore({
     inlineSvg: true
   }))
