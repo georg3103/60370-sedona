@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-<!-- SVG sprite -->
-    <div style="display:none">
+    <!-- SVG sprite -->
+
+    <!-- <include> нельзя задать стили, поэтому поместил внутрь дива -->
+
+    <div class="sprite">
       <include src="build/img/sprite.svg"></include>
     </div>
 
@@ -77,18 +81,18 @@
       <!-- Main Form [1 intro] -->
 
       <fieldset class="feedback__section">
-        <div class="feedback__section--wrapper">
+        <div class="feedback__section-wrapper">
 
-          <legend class="feedback__section--title">
+          <h2 class="feedback__section-title">
             Представьтесь:
-          </legend>
+          </h2>
 
           <div class="textbox">
             <label class="textbox__title" for="firstname">
               Имя*:
             </label>
             <div class="textbox__inner textbox__inner--name">
-              <input class="textbox__input" type="text" name="firstname" id="firstname" placeholder="Петр">
+              <input class="textbox__input" type="text" name="firstname" id="firstname" placeholder="Петр" required>
             </div>
           </div>
 
@@ -97,7 +101,7 @@
               Фамилия*:
             </label>
             <div class="textbox__inner">
-              <input class="textbox__input" type="text" name="lastname" id="lastname" placeholder="Иванов">
+              <input class="textbox__input" type="text" name="lastname" id="lastname" placeholder="Иванов" required>
             </div>
           </div>
 
@@ -115,19 +119,19 @@
       <!-- Main Form [2 contacts] -->
 
       <fieldset class="feedback__section">
-        <div class="feedback__section--wrapper">
-          <legend class="feedback__section--title">
+        <div class="feedback__section-wrapper">
+          <h2 class="feedback__section-title">
             Контактная информация:
-          </legend>
+          </h2>
 
-          <div class="feedback__section--contacts">
+          <div class="feedback__section-contacts">
 
             <div class="textbox textbox--contacts">
               <label class="textbox__title textbox__title--contacts" for="phone" >
                 <span class="textbox__title--display">Контактный</span> телефон*:
               </label>
               <div class="textbox__inner">
-                <input class="textbox__input textbox__input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]">
+                <input class="textbox__input textbox__input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
               </div>
               <!--
               <span class="textbox__warning">
@@ -141,7 +145,7 @@
                 Электронная почта*:
               </label>
               <div class="textbox__inner">
-                <input class="textbox__input textbox__input--email" type="email" name="email" id="email" placeholder="Введите email" pattern="[a-zA-Z]{2,}@[a-zA-Z]{2,}.[a-zA-Z]{2,}">
+                <input class="textbox__input textbox__input--email" type="email" name="email" id="email" placeholder="Введите email" pattern="[a-zA-Z]{2,}@[a-zA-Z]{2,}.[a-zA-Z]{2,}" required>
               </div>
               <!--
               <span class="textbox__warning">
@@ -156,10 +160,10 @@
       <!-- Main Form [3 Rating] -->
 
       <fieldset class="feedback__section">
-        <div class="feedback__section--wrapper">
-          <legend class="feedback__section--title">
+        <div class="feedback__section-wrapper">
+          <h2 class="feedback__section-title">
             Ваше общее впечатление:
-          </legend>
+          </h2>
 
           <div class="toggle">
             <div class="toggle__item">
@@ -193,10 +197,10 @@
       <!-- Main Form [4 Sightseeing] -->
 
       <fieldset class="feedback__section">
-        <div class="feedback__section--wrapper">
-          <legend class="feedback__section--title">
+        <div class="feedback__section-wrapper">
+          <h2 class="feedback__section-title">
               Посещенные достопримечательности:
-          </legend>
+          </h2>
 
           <div class="checkbox">
 
@@ -234,10 +238,10 @@
       <!-- Main Form [5 Feedback] -->
 
       <fieldset class="feedback__section">
-        <div class="feedback__section--wrapper">
-          <legend class="feedback__section--title">
+        <div class="feedback__section-wrapper">
+          <h2 class="feedback__section-title">
             Опишите свои эмоции:
-          </legend>
+          </h2>
 
           <div class="textarea">
             <textarea class="textarea__input" name="feedback" id="feedback"  rows="6" placeholder="Опишите подробно все свои восторги">
@@ -249,13 +253,42 @@
       <!-- Main Form [6 Submit] -->
 
       <fieldset class="feedback__section">
-        <div class="feedback__section--wrapper">
+        <div class="feedback__section-wrapper">
           <button class="button" type="submit">Отправить отзыв</button>
-          <div class="feedback__section--deco">* - Обязательные поля</div>
+          <div class="feedback__section-deco">* - Обязательные поля</div>
         </div>
       </fieldset>
 
       </form>
+
+      <!-- Popup -->
+
+      <section class="popup popup--success popup--hidden">
+        <div class="popup__inner">
+          <h2 class="popup__heading">Ваш отзыв отправлен!</h2>
+          <p class="popup__text">
+            Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+            <br>
+            В ближайшее время мы опубликуем его на сайте.
+          </p>
+        </div>
+        <div class="popup__btn-container popup__btn-container--with-bg">
+            <button class="button git popup__close" type="button">Закрыть окно</button>
+        </div>
+      </section>
+
+      <section class="popup popup--fail popup--hidden">
+        <div class="popup__inner">
+          <h2 class="popup__heading">Что-то пошло не так!</h2>
+          <p class="popup__text">
+            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.
+          </p>
+        </div>
+        <div class="popup__btn-container">
+          <button class="button popup__btn-small popup__close" type="button">Ок</button>
+        </div>
+      </section>
+    </section>
 
       <!-- Footer -->
 
@@ -269,7 +302,7 @@
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture" width="17px" heigh="15px" fill="#ffffff">
+                <svg class="social-list__picture" width="17px" height="15px" fill="#ffffff">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter">
                   </use>
                 </svg>
@@ -278,7 +311,7 @@
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture" width="8.672" heigh="18.944"  fill="#ffffff">
+                <svg class="social-list__picture" width="8.672" height="18.944"  fill="#ffffff">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook">
                   </use>
                 </svg>
@@ -287,7 +320,7 @@
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture" width="17px" heigh="15px"  fill="#ffffff">
+                <svg class="social-list__picture" width="17px" height="15px"  fill="#ffffff">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube">
                   </use>
                 </svg>
@@ -298,11 +331,11 @@
         </div>
 
         <div class="page-footer__copyrights">
-          <span class="page-footer__copyrights--text">
+          <span class="page-footer__copyrights-text">
             Разработано
           </span>
-          <a class="page-footer__copyrights--link" href="#">
-            <svg class="page-footer__copyrights--picture" width="32px" heigh="37px" fill="#000000">
+          <a class="page-footer__copyrights-link" href="https://htmlacademy.ru/">
+            <svg class="page-footer__copyrights-picture" width="32px" height="37px" fill="#000000">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy">
                 </use>
             </svg>
@@ -314,5 +347,6 @@
     </div>
     <script src="js/main.js"></script>
     <script src="js/picturefill.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

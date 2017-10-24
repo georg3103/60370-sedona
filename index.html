@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
@@ -9,9 +10,9 @@
 
     <!-- SVG sprite -->
 
-    <?php include_once("img/sprite.svg"); ?>
+    <!-- <include> нельзя задать стили, поэтому поместил внутрь дива -->
 
-    <div style="display:none">
+    <div class="sprite">
       <include src="build/img/sprite.svg"></include>
     </div>
 
@@ -101,7 +102,7 @@
 
       <!-- Main  Features -->
 
-      <ul class="features">
+      <ul class="feature">
 
       <!-- Main  Features [1] -->
 
@@ -192,7 +193,7 @@
       <!-- Main  Advantages - brief [3] -->
 
       <ul class="advantages advantages--brief">
-        <li class="advantages--brief__item">
+        <li class="advantages__item">
           <div class="advantages__inner">
             <div class="advantages__text">
               <h2 class="advantages__title">
@@ -214,7 +215,7 @@
         </li>
 
       <!-- Main  Advantages - brief [4] -->
-        <li class="advantages--brief__item">
+        <li class="advantages__item">
           <div class="advantages__inner">
             <div class="advantages__text">
               <h2 class="advantages__title">
@@ -235,7 +236,7 @@
           </div>
         </li>
       <!-- Main  Advantages - brief [5] -->
-        <li class="advantages--brief__item">
+        <li class="advantages__item">
           <div class="advantages__inner">
             <div class="advantages__text">
               <h2 class="advantages__title">
@@ -267,7 +268,7 @@
         </p>
         <!-- Может быть ссылкой, т.к. перенаправляет юзера на заполнение формы -->
 
-        <a class="button">Найти гостиницу</a>
+        <a href="#" class="button">Найти гостиницу</a>
 
       </div>
 
@@ -290,7 +291,7 @@
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture" width="17px" heigh="15px" fill="#ffffff">
+                <svg class="social-list__picture" width="17px" height="15px" fill="#ffffff">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter">
                   </use>
                 </svg>
@@ -299,7 +300,7 @@
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture" width="8.672" heigh="18.944"  fill="#ffffff">
+                <svg class="social-list__picture" width="8.672" height="18.944"  fill="#ffffff">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook">
                   </use>
                 </svg>
@@ -308,7 +309,7 @@
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture" width="17px" heigh="15px"  fill="#ffffff">
+                <svg class="social-list__picture" width="17px" height="15px"  fill="#ffffff">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube">
                   </use>
                 </svg>
@@ -319,11 +320,11 @@
         </div>
 
         <div class="page-footer__copyrights">
-          <span class="page-footer__copyrights--text">
+          <span class="page-footer__copyrights-text">
             Разработано
           </span>
-          <a class="page-footer__copyrights--link" href="#">
-            <svg class="page-footer__copyrights--picture" width="32px" heigh="37px" fill="#000000">
+          <a class="page-footer__copyrights-link" href="https://htmlacademy.ru/">
+            <svg class="page-footer__copyrights-picture" width="32px" height="37px" fill="#000000">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy">
                 </use>
             </svg>
