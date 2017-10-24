@@ -1,0 +1,78 @@
+@import "global/variable.scss";
+
+.page-footer {
+  margin: 0 20px;
+  padding-top: 20px;
+  min-height: 230px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__hashtag {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.page-footer__social {
+  margin-bottom: 25px;
+}
+
+.page-footer__copyrights {
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__copyrights-text {
+  color: #000000;
+  padding-right: 12px;
+  line-height: 48px;
+}
+
+.page-footer__copyrights-link {
+  display: block;
+  width: 27px;
+  height: 48px;
+  padding-top: 5px;
+}
+
+.page-footer__copyrights-picture {
+  fill: $logo;
+  width: 32px;
+  height: 37px;
+
+  &:hover {
+    fill: $logo-hover;
+  }
+
+  &:active {
+    fill: $logo-down;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .page-footer {
+    margin-top: 70px;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 100px;
+  }
+
+  .page-footer__hashtag {
+    margin-bottom: 50px;
+  }
+
+  .page-footer__copyrights-text {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .page-footer {
+    margin-top: 10px;
+  }
+}

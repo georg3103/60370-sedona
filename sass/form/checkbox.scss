@@ -1,0 +1,89 @@
+@import "global/variable.scss";
+
+.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.checkbox__item {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.checkbox__input {
+  padding: 0;
+  display: none;
+
+  &:checked + .checkbox__title::before {
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: $checkbox-bg;
+  }
+
+  &:checked + .checkbox__title:hover::before {
+    background-color: $checkbox-bg-hover;
+  }
+
+  &:checked + .checkbox__title:active::before {
+    background-color: $checkbox-bg-down;
+  }
+
+  &:disabled + .checkbox__title,
+  &:disabled + .checkbox__title:hover,
+  &:disabled + .checkbox__title:active {
+    &::before {
+      background-color: $checkbox-bg-down;
+    }
+  }
+}
+
+.checkbox__title {
+  position: relative;
+  display: block;
+  padding-left: 80px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 56px;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
+  user-select: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 5px;
+    background-color: $checkbox-bg;
+    left: 0;
+  }
+
+  &:hover::before {
+    background-color: $checkbox-bg-hover;
+  }
+
+  &:active::before {
+    background-color: $checkbox-bg-down;
+  }
+
+  &:checked::before {
+    background-color: $checkbox-bg-down;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .checkbox__item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .checkbox__item {
+    width: 25%;
+  }
+}

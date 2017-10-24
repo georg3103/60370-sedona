@@ -1,0 +1,169 @@
+@import "global/variable.scss";
+
+.posts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  color: #000000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.posts__item {
+  position: relative;
+  padding: 23px 0;
+  font-size: 14px;
+}
+
+.posts__content {
+  margin: 0;
+  padding: 0;
+}
+
+.posts__photo {
+  display: block;
+  width: 280px;
+  height: 280px;
+}
+
+.posts__photo img {
+  display: block;
+}
+
+.posts__text {
+  margin-top: 15px;
+}
+/*
+.posts__description {
+
+}
+*/
+.posts__title {
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.posts__author {
+  text-transform: none;
+}
+
+.posts__like {
+  margin-top: 15px;
+  display: flex;
+}
+
+.posts__like--icon {
+  fill: $light-color;
+}
+
+.posts__like--icon-inner {
+  display: block;
+  width: 22px;
+  height: 20px;
+}
+/*
+.posts__like--icon {
+
+}
+*/
+.posts__like--number {
+  display: block;
+  height: 14px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .posts {
+    width: 648px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .posts__item:first-child {
+    display: block;
+    width: 650px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .posts__item {
+    width: 324px;
+    padding: 0;
+  }
+
+  .posts__item:nth-child(1) .posts__photo {
+    width: 650px;
+    height: auto;
+  }
+
+  .posts__photo {
+    width: 324px;
+    height: auto;
+  }
+
+  .posts__text {
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 15px 20px;
+  }
+
+  .posts__like--icon {
+    fill: #ffffff;
+  }
+
+  .posts__like {
+    padding-right: 0;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .posts {
+    width: auto;
+  }
+
+  .posts__like {
+    padding-right: 20px;
+  }
+
+  .posts__item:first-child {
+    width: 100%;
+    margin: auto;
+    margin-top: 35px;
+  }
+
+  .posts__item:first-child .posts__photo {
+    width: 1200px;
+    height: auto;
+  }
+
+  .posts__photo {
+    width: 400px;
+    height: auto;
+  }
+
+  .posts__item {
+    width: 33.3%;
+    padding: 0;
+  }
+
+  .posts__text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+  }
+
+  .posts__description {
+    padding-left: 20px;
+  }
+}

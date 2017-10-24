@@ -1,0 +1,78 @@
+@import "global/variable.scss";
+
+.intro {
+  margin: 0;
+  padding: 0;
+  min-height: 158px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left, center 0;
+  background-size: 100% 27px, cover;
+}
+
+.intro__picture {
+  padding-top: 50px;
+}
+
+.intro--first-page {
+  min-height: 389px;
+  background-position: bottom left, center 0;
+  background-size: 100% 27px, cover;
+}
+
+.intro--first-page .intro__picture {
+  padding: 90px 0;
+  width: 280px;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .intro {
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .intro {
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: bottom left, center 0;
+    background-size: 100% 65px, cover;
+    height: 290px;
+  }
+
+  .intro--first-page {
+    background-position: bottom left, center 0;
+    background-size: 100% 57px, cover;
+    height: 520px;
+  }
+
+  .intro__picture {
+    padding-top: 100px;
+    width: 460px;
+    height: 75px;
+  }
+
+  .intro--first-page .intro__picture {
+    width: 460px;
+    height: 350px;
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .intro {
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .intro {
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
+    background-position: bottom left, center 0;
+    background-size: 100% 57px, cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .intro {
+      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+}

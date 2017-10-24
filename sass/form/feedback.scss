@@ -1,0 +1,214 @@
+@import "global/variable.scss";
+
+.feedback {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.feedback__section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  padding-bottom: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+.feedback__section:last-child {
+  padding-top: 30px;
+  border-top: none;
+}
+
+.feedback__section-title {
+  display: block;
+  color: #000000;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.feedback__section-contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedback__section-deco {
+  display: none;
+}
+
+.feedback__section:nth-child(6) .feedback__section-wrapper {
+  display: flex;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .feedback__section {
+    border-top: none;
+  }
+
+  .feedback__section:nth-child(1) {
+    width: 40%;
+    order: 2;
+    padding-right: 10px;
+  }
+
+  .feedback__section:nth-child(3) {
+    width: 40%;
+    order: 1;
+    padding-left: 10px;
+  }
+
+  .feedback__section:nth-child(2) {
+    width: 100%;
+    order: 3;
+  }
+
+  .feedback__section:nth-child(2) .feedback__section-title,
+  .feedback__section:nth-child(4) .feedback__section-title,
+  .feedback__section:nth-child(5) .feedback__section-title {
+    text-align: center;
+  }
+
+  .feedback__section:nth-child(4) {
+    display: flex;
+    margin: 0 auto;
+    width: 468px;
+    order: 4;
+  }
+
+  .feedback__section:nth-child(4) .checkbox__item:nth-child(2) {
+    order: 3;
+  }
+
+  .feedback__section:nth-child(4) .checkbox__item:nth-child(4) {
+    order: 4;
+  }
+
+  .feedback__section:nth-child(5) {
+    width: 100%;
+    order: 5;
+  }
+
+  .feedback__section:nth-child(6) {
+    width: 100%;
+    order: 6;
+  }
+
+  .feedback__section:nth-child(6) .button {
+    margin-left: 40px;
+  }
+
+  .feedback__section-title {
+    text-align: left;
+    margin-bottom: 65px;
+  }
+
+  .feedback__section .button {
+    margin-left: 0;
+    width: 324px;
+  }
+
+  .feedback__section-deco {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+    line-height: 26px;
+    padding-top: 15px;
+    padding-right: 40px;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .feedback__section:nth-child(3) {
+    margin-left: 0;
+    margin-bottom: 15px;
+    padding-left: 0;
+  }
+
+  .feedback__section:nth-child(4) {
+    width: 100%;
+  }
+
+  .feedback__section:nth-child(1) {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding-right: 0;
+  }
+
+  .feedback__section:nth-child(2) .feedback__section-title {
+    padding-bottom: 75px;
+  }
+
+  .feedback__section-contacts .textbox--contacts:first-child {
+    width: 48%;
+  }
+
+  .feedback__section:nth-child(3) .feedback__section-wrapper {
+    padding-left: 98px;
+  }
+
+  .feedback__section:nth-child(1) .feedback__section-wrapper {
+    padding-left: 98px;
+    padding-right: 84px;
+  }
+
+  .feedback__section:nth-child(2) .feedback__section-wrapper {
+    padding-left: 98px;
+    padding-right: 76px;
+  }
+
+  .feedback__section:nth-child(4) .feedback__section-wrapper {
+    padding-left: 98px;
+    padding-right: 65px;
+  }
+
+  .feedback__section:nth-child(5) .feedback__section-wrapper {
+    padding-left: 98px;
+    padding-right: 100px;
+  }
+
+  .feedback__section:nth-child(5) .feedback__section-title {
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 55px;
+  }
+
+  .feedback__section:nth-child(5) {
+    padding-top: 15px;
+  }
+
+  .feedback__section:nth-child(6) {
+    padding-left: 100px;
+    padding-top: 37px;
+    margin-bottom: 60px;
+  }
+
+  .feedback__section:nth-child(6) .button {
+    margin-left: 0;
+  }
+
+  .feedback__section:nth-child(2) .textbox--contacts:nth-child(2) .textbox__title--contacts {
+    margin-left: 0;
+  }
+
+  .feedback__section-title {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .feedback__section .button {
+    width: 480px;
+  }
+
+  .feedback__section-deco {
+    padding-right: 100px;
+  }
+}

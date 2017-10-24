@@ -1,0 +1,123 @@
+.popup {
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 6px 25px -3px rgba(black, 0.2);
+  animation: popup-open 650ms ease-out;
+
+  @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: $tablet-width) {
+      width: calc(100% - 120px);
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 640px;
+  }
+}
+
+.popup__inner {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 450px;
+    padding: 0;
+    padding-top: 55px;
+  }
+}
+
+@keyframes popup-open {
+  0% {
+    transform: translate(-50%, 100%);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: translate(-50%, -65%);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.popup__heading {
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+.popup__text {
+  margin-top: 0;
+  margin-bottom: 35px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.popup__btn-container {
+  max-width: 275px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+}
+
+.popup__btn-container--with-bg {
+  max-width: none;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 20px 0;
+  background-color: #f2f2f2;
+
+  @media screen and (min-width: $tablet-width) {
+    width: auto;
+    margin: 0;
+    padding: 45px 92px;
+  }
+}
+
+.popup--fail {
+  @media screen and (min-width: $tablet-width) {
+    width: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.popup--fail .popup__heading {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popup--hidden {
+  display: none;
+}
+
+.popup__btn-small {
+  width: 274px;
+}
+
+.popup__btn-big {
+  width: 460px;
+}
