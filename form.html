@@ -7,9 +7,11 @@
   </head>
   <body>
 
-<!-- SVG sprite -->
+    <!-- SVG sprite -->
 
-    <div style="display:none">
+    <!-- <include> нельзя задать стили, поэтому поместил внутрь дива -->
+
+    <div class="sprite">
       <include src="build/img/sprite.svg"></include>
     </div>
 
@@ -80,9 +82,9 @@
       <fieldset class="feedback__section">
         <div class="feedback__section--wrapper">
 
-          <legend class="feedback__section--title">
+          <h2 class="feedback__section--title">
             Представьтесь:
-          </legend>
+          </h2>
 
           <div class="textbox">
             <label class="textbox__title" for="firstname">
@@ -117,9 +119,9 @@
 
       <fieldset class="feedback__section">
         <div class="feedback__section--wrapper">
-          <legend class="feedback__section--title">
+          <h2 class="feedback__section--title">
             Контактная информация:
-          </legend>
+          </h2>
 
           <div class="feedback__section--contacts">
 
@@ -158,9 +160,9 @@
 
       <fieldset class="feedback__section">
         <div class="feedback__section--wrapper">
-          <legend class="feedback__section--title">
+          <h2 class="feedback__section--title">
             Ваше общее впечатление:
-          </legend>
+          </h2>
 
           <div class="toggle">
             <div class="toggle__item">
@@ -195,9 +197,9 @@
 
       <fieldset class="feedback__section">
         <div class="feedback__section--wrapper">
-          <legend class="feedback__section--title">
+          <h2 class="feedback__section--title">
               Посещенные достопримечательности:
-          </legend>
+          </h2>
 
           <div class="checkbox">
 
@@ -236,9 +238,9 @@
 
       <fieldset class="feedback__section">
         <div class="feedback__section--wrapper">
-          <legend class="feedback__section--title">
+          <h2 class="feedback__section--title">
             Опишите свои эмоции:
-          </legend>
+          </h2>
 
           <div class="textarea">
             <textarea class="textarea__input" name="feedback" id="feedback"  rows="6" placeholder="Опишите подробно все свои восторги">
@@ -270,7 +272,7 @@
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture" width="17px" heigh="15px" fill="#ffffff">
+                <svg class="social-list__picture" width="17px" height="15px" fill="#ffffff">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter">
                   </use>
                 </svg>
@@ -279,7 +281,7 @@
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture" width="8.672" heigh="18.944"  fill="#ffffff">
+                <svg class="social-list__picture" width="8.672" height="18.944"  fill="#ffffff">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook">
                   </use>
                 </svg>
@@ -288,7 +290,7 @@
 
             <li class="social-list__item">
               <a class="social-list__link" href="#">
-                <svg class="social-list__picture" width="17px" heigh="15px"  fill="#ffffff">
+                <svg class="social-list__picture" width="17px" height="15px"  fill="#ffffff">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube">
                   </use>
                 </svg>
@@ -303,7 +305,7 @@
             Разработано
           </span>
           <a class="page-footer__copyrights--link" href="https://htmlacademy.ru/">
-            <svg class="page-footer__copyrights--picture" width="32px" heigh="37px" fill="#000000">
+            <svg class="page-footer__copyrights--picture" width="32px" height="37px" fill="#000000">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy">
                 </use>
             </svg>
