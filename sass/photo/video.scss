@@ -1,7 +1,8 @@
 @import "global/variable.scss";
 
 .video {
-  margin: 30px auto;
+  margin: 36px auto;
+  margin-bottom: 39px;
 }
 
 .video__window {
@@ -12,6 +13,7 @@
   background-position: 50% top;
   background-size: 320px 201px;
   position: relative;
+  height: 200px;
 }
 
 .video__controls {
@@ -49,7 +51,7 @@
     position: relative;
     display: block;
     top: 16px;
-    left: 50px;
+    left: 57px;
     width: 10px;
     height: 10px;
     background-color: #ffffff;
@@ -65,7 +67,7 @@
 }
 
 .video__button:nth-child(3) {
-  margin-left: 90px;
+  margin-left: 96px;
 }
 
 .video__icon {

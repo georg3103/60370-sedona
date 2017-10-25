@@ -3,7 +3,7 @@
 .feature {
   margin: 0;
   padding: 0;
-  padding-bottom: 40px;
+  padding-bottom: 36px;
   list-style: none;
   color: #333333;
 
@@ -20,6 +20,8 @@
 
 .feature__item p {
   margin: 0;
+  padding-top: 8px;
+  width: 232px;
 }
 
 .feature__icon {
@@ -33,7 +35,7 @@
 }
 */
 .feature__text {
-  padding-left: 20px;
+  padding-left: 13px;
 }
 
 .feature__title {
