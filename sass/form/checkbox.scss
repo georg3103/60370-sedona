@@ -77,8 +77,12 @@
 }
 
 @media screen and (min-width: $tablet-width) {
+  .checkbox {
+    width: 466px;
+  }
+
   .checkbox__item {
-    width: 50%;
+    width: 44%;
   }
 }
 

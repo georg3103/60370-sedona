@@ -68,16 +68,24 @@
 
 @media screen and (min-width: $tablet-width) {
   .common-section {
-    min-height: 145px;
+    height: 169px;
     padding-bottom: 0;
   }
 
+  .common-section--second {
+    height: 240px;
+  }
+
   .common-section--index .common-section__title {
-    padding-top: 20px;
+    font-size: 21px;
+    padding-top: 12px;
     width: 460px;
     margin: 0 auto;
-    margin-left: 10px;
     margin-left: none;
+  }
+
+  .common-section--photo .common-section__title--big {
+    font-size: 30px;
   }
 
   .common-section__title {
@@ -89,6 +97,7 @@
   .common-section p {
     width: 500px;
     margin: 30px auto;
+    padding-top: 0px;
   }
 
   .common-section__title--big {
@@ -97,8 +106,22 @@
     padding-top: 40px;
   }
 
+  .common-section--index .common-section__title--big {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+
+  .common-section--form .common-section__title--big {
+    font-size: 30px;
+  }
+
+  .common-section--second p {
+    width: 450px;
+  }
+
   .common-section .button {
-    width: 480px;
+    width: 460px;
+    margin-top: 42px;
   }
 }
 

@@ -93,6 +93,11 @@
 }
 
 @media screen and (min-width: $tablet-width) {
+  .video {
+    margin: 41px auto;
+    margin-bottom: 62px;
+  }
+
   .video__window {
     background-image: url("../img/video-tablet@1x.jpg");
     background-size: 650px 500px;
@@ -127,8 +132,12 @@
 
     &::after {
       top: 39px;
-      left: 115px;
+      left: 135px;
     }
+  }
+
+  .posts__like--icon-video {
+    fill: #ffffff;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

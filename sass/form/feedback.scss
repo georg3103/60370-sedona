@@ -70,6 +70,53 @@
     border-top: none;
   }
 
+  .feedback__section-title {
+    margin-top: 15px;
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
+
+  .feedback__section:nth-child(1) {
+    margin-left: auto;
+    margin-right: 33px;
+  }
+
+  .feedback__section:nth-child(4) .feedback__section-title {
+    margin-top: 6px;
+    padding-left: 0;
+    margin-bottom: 46px;
+  }
+
+  .feedback__section:nth-child(2) .feedback__section-title {
+    margin-top: 15px;
+    padding-left: 0;
+    margin-bottom: 27px;
+  }
+
+  .feedback__section:nth-child(3) {
+    margin-right: auto;
+    margin-left: 33px;
+  }
+
+  .feedback__section-title {
+    font-size: 21px;
+    margin-top: 27px;
+    padding-left: 16px;
+    margin-bottom: 60px;
+  }
+
+  .feedback__section:nth-child(1) .feedback__section-wrapper {
+    padding-left: 25px;
+  }
+
+  .feedback__section:nth-child(1) .feedback__section-title {
+    padding-left: 0;
+  }
+
+  .feedback__section-wrapper {
+    margin: 0;
+  }
+
   .feedback__section:nth-child(1) {
     width: 40%;
     order: 2;
@@ -116,15 +163,20 @@
   .feedback__section:nth-child(6) {
     width: 100%;
     order: 6;
+    margin-bottom: 60px;
+  }
+
+  .feedback__section:nth-child(5) .feedback__section-title {
+    padding-left: 0;
   }
 
   .feedback__section:nth-child(6) .button {
-    margin-left: 40px;
+    margin-left: 60px;
+    margin-top: 12px;
   }
 
   .feedback__section-title {
     text-align: left;
-    margin-bottom: 65px;
   }
 
   .feedback__section .button {
@@ -138,8 +190,8 @@
     font-weight: normal;
     color: #333333;
     line-height: 26px;
-    padding-top: 15px;
-    padding-right: 40px;
+    padding-right: 58px;
+    padding-top: 32px;
     text-align: right;
   }
 }
