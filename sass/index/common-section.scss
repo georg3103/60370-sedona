@@ -11,6 +11,11 @@
   padding: 0 3%;
 }
 
+.common-section--index p {
+  padding-top: 17px;
+  margin-bottom: 8px;
+}
+
 .common-section .button {
   margin-top: 30px;
 }
@@ -20,13 +25,67 @@
   font-size: 18px;
   line-height: 25px;
   color: #000000;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
+}
+
+.common-section--index .common-section__title {
+  width: 260px;
+  margin: auto;
+  margin-top: 3px;
+}
+
+.common-section--second {
+  padding-top: 24px;
+}
+
+.common-section--second p {
+  padding-top: 8px;
+}
+
+.common-section__title--big {
+  font-size: 21px;
+}
+
+
+.common-section--photo .common-section__title--big,
+.common-section--form .common-section__title--big {
+  font-size: 18px;
+}
+
+.common-section--form p,
+.common-section--photo p {
+  padding: 0 1%;
+  padding-top: 16px;
+}
+
+.common-section--photo-second .common-section__title--big {
+  padding-top: 10px;
+}
+
+.common-section--photo-second p {
+  padding-top: 12px;
 }
 
 @media screen and (min-width: $tablet-width) {
   .common-section {
-    min-height: 145px;
+    height: 169px;
     padding-bottom: 0;
+  }
+
+  .common-section--second {
+    height: 240px;
+  }
+
+  .common-section--index .common-section__title {
+    font-size: 21px;
+    padding-top: 12px;
+    width: 460px;
+    margin: 0 auto;
+    margin-left: none;
+  }
+
+  .common-section--photo .common-section__title--big {
+    font-size: 30px;
   }
 
   .common-section__title {
@@ -38,6 +97,7 @@
   .common-section p {
     width: 500px;
     margin: 30px auto;
+    padding-top: 0px;
   }
 
   .common-section__title--big {
@@ -46,8 +106,22 @@
     padding-top: 40px;
   }
 
+  .common-section--index .common-section__title--big {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+
+  .common-section--form .common-section__title--big {
+    font-size: 30px;
+  }
+
+  .common-section--second p {
+    width: 450px;
+  }
+
   .common-section .button {
-    width: 480px;
+    width: 460px;
+    margin-top: 42px;
   }
 }
 

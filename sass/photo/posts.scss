@@ -14,8 +14,9 @@
 
 .posts__item {
   position: relative;
-  padding: 23px 0;
   font-size: 14px;
+  padding: 0;
+  padding-top: 35px;
 }
 
 .posts__content {
@@ -72,8 +73,14 @@
 .posts__like--number {
   display: block;
   height: 14px;
-  padding-left: 10px;
+  padding-left: 14px;
   font-weight: bold;
+  padding-top: 1px;
+  margin-top: -6px;
+}
+
+.posts__item:nth-child(4) .posts__photo {
+  padding-top: 5px;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -111,16 +118,35 @@
     flex-direction: row;
     background-color: #f2f2f2;
     margin: 0;
-    padding: 15px 20px;
+    padding: 16px 20px;
   }
 
   .posts__like--icon {
-    fill: #ffffff;
+    fill: #a9a9a9;
+  }
+
+  .posts__item:nth-child(4) .posts__photo {
+    padding-top: 0;
+  }
+
+  .posts__like--number {
+    margin-top: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .posts__item:nth-child(2) .posts__like--number {
+    padding-right: 18px;
   }
 
   .posts__like {
     padding-right: 0;
     margin-left: auto;
+    margin-top: 12px;
+  }
+
+  .common-section--photo .common-section__title--big {
+    margin-top: 20px;
   }
 }
 
