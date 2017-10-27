@@ -46,4 +46,11 @@
   &:active {
     fill: $social-item-down;
   }
+
+  @media screen and (min-width: $tablet-width) {
+    .social-list {
+      padding-top: 20px;
+      min-height: 230px;
+    }
+  }
 }

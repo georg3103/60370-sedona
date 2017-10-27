@@ -1,7 +1,8 @@
 @import "global/variable.scss";
 
 .video {
-  margin: 30px auto;
+  margin: 36px auto;
+  margin-bottom: 39px;
 }
 
 .video__window {
@@ -12,6 +13,7 @@
   background-position: 50% top;
   background-size: 320px 201px;
   position: relative;
+  height: 200px;
 }
 
 .video__controls {
@@ -49,7 +51,7 @@
     position: relative;
     display: block;
     top: 16px;
-    left: 50px;
+    left: 57px;
     width: 10px;
     height: 10px;
     background-color: #ffffff;
@@ -65,7 +67,7 @@
 }
 
 .video__button:nth-child(3) {
-  margin-left: 90px;
+  margin-left: 96px;
 }
 
 .video__icon {
@@ -91,6 +93,11 @@
 }
 
 @media screen and (min-width: $tablet-width) {
+  .video {
+    margin: 41px auto;
+    margin-bottom: 62px;
+  }
+
   .video__window {
     background-image: url("../img/video-tablet@1x.jpg");
     background-size: 650px 500px;
@@ -125,8 +132,12 @@
 
     &::after {
       top: 39px;
-      left: 115px;
+      left: 135px;
     }
+  }
+
+  .posts__like--icon-video {
+    fill: #ffffff;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

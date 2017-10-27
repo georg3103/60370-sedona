@@ -1,0 +1,7 @@
+@import "global/variable.scss";
+
+@media screen and (min-width: $tablet-width) {
+  .block {
+    display: block;
+  }
+}

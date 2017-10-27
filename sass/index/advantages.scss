@@ -29,11 +29,19 @@
   padding: 20px 20px;
   line-height: 21px;
 }
-/*
-.advantages__title {
 
+.advantages--brief .advantages__title {
+  font-size: 18px;
+  line-height: 10px;
+  padding-top: 6px;
 }
 
+.advantages__text p {
+  padding-bottom: 5px;
+}
+
+
+/*
 .advantages__number {
 
 }
@@ -84,6 +92,11 @@
     flex-direction: row;
   }
 
+  .advantages__title {
+    margin-top: 10px;
+    line-height: 25px;
+  }
+
   .advantages--second .advantages__inner {
     flex-direction: row-reverse;
   }
@@ -117,12 +130,28 @@
     padding-top: 30px;
   }
 
+  .advantages--brief .advantages__number {
+    margin-top: 6px;
+  }
+
+  .advantages--brief p:nth-child(2) {
+    padding-top: 5px;
+  }
+
   .advantages--brief .advantages__title {
     padding: 0 10%;
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 0;
   }
 
   .advantages p {
     padding: 0 12%;
+    margin-top: 17px;
+  }
+
+  .advantages--brief p {
+    padding: 0 8%;
   }
 }
 
