@@ -73,10 +73,12 @@
   }
 
   .feature__icon {
+    width: 82px;
+    height: 73px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .feature__item p {
@@ -98,13 +100,9 @@
     font-size: 21px;
     padding-bottom: 18px;
   }
-
-  .feature__icon {
-    width: 82px;
-    height: 73px;
-  }
 }
-
+/*
 @media screen and (min-width: $desktop-width) {
 
 }
+*/
