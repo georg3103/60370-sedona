@@ -56,21 +56,21 @@
   display: flex;
 }
 
-.posts__like--icon {
+.posts__like-icon {
   fill: $light-color;
 }
 
-.posts__like--icon-inner {
+.posts__like-icon-inner {
   display: block;
   width: 22px;
   height: 20px;
 }
 /*
-.posts__like--icon {
+.posts__like-icon {
 
 }
 */
-.posts__like--number {
+.posts__like-number {
   display: block;
   height: 14px;
   padding-left: 14px;
@@ -121,7 +121,7 @@
     padding: 16px 20px;
   }
 
-  .posts__like--icon {
+  .posts__like-icon {
     fill: #a9a9a9;
   }
 
@@ -129,13 +129,13 @@
     padding-top: 0;
   }
 
-  .posts__like--number {
+  .posts__like-number {
     margin-top: 3px;
     padding-right: 10px;
     padding-left: 10px;
   }
 
-  .posts__item:nth-child(2) .posts__like--number {
+  .posts__item:nth-child(2) .posts__like-number {
     padding-right: 18px;
   }
 
