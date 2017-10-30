@@ -1,7 +1,7 @@
 .wrapper {
   width: auto;
   text-align: center;
-  border: 1px solid black;
+  min-width: 320px;
 }
 
 @media screen and (min-width: $tablet-width) {
