@@ -59,6 +59,12 @@
     padding-bottom: 0;
   }
 
+  .feature__item:nth-child(1),
+  .feature__item:nth-child(2),
+  .feature__item:nth-child(3) {
+    margin-top: 0;
+  }
+
   .feature__item {
     width: 33.3%;
     display: flex;

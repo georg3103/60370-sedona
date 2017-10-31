@@ -103,8 +103,16 @@
   }
 
   .advantages__title {
+    padding-top: 0;
+    font-size: 21px;
+    margin-bottom: 0px;
+    font-size: 21px;
     margin-top: 10px;
     line-height: 25px;
+  }
+
+  .advantages__number {
+    margin-top: 13px;
   }
 
   .advantages--second .advantages__inner {
@@ -124,6 +132,7 @@
 
   .advantages--brief {
     flex-direction: row;
+    min-height: 256px;
   }
 
   .advantages__item {

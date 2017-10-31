@@ -118,7 +118,10 @@
     flex-direction: row;
     background-color: #f2f2f2;
     margin: 0;
-    padding: 16px 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 14px;
+    padding-left: 20px;
   }
 
   .posts__like--icon {
@@ -139,14 +142,18 @@
     padding-right: 18px;
   }
 
+  .posts__item:nth-child(3) .posts__like--number {
+    padding-right: 23px;
+  }
+
+  .posts__item:nth-child(4) .posts__like--number {
+    padding-right: 16px;
+  }
+
   .posts__like {
     padding-right: 0;
     margin-left: auto;
     margin-top: 12px;
-  }
-
-  .common-section--photo .common-section__title--big {
-    margin-top: 20px;
   }
 }
 
