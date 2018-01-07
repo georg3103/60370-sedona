@@ -1,18 +1,17 @@
+@import "global/variable.scss";
+@import "global/mixins.scss";
+
 .wrapper {
   width: auto;
   text-align: center;
   min-width: 320px;
-}
 
-@media screen and (min-width: $tablet-width) {
-  .wrapper {
+  @include tablet {
     max-width: $desktop-width;
     margin: 0 auto;
   }
-}
 
-@media screen and (min-width: $desktop-width) {
-  .wrapper {
+  @include desktop {
     box-shadow: 0 0 40px 0 #dbdbdb;
   }
 }

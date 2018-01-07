@@ -1,4 +1,5 @@
 @import "global/variable.scss";
+@import "global/mixins.scss";
 
 .social-list {
   display: flex;
@@ -7,6 +8,11 @@
 
   margin: 0;
   padding: 0;
+
+  @include tablet {
+    padding-top: 20px;
+    min-height: 50px;
+  }
 }
 
 .social-list__item {
@@ -45,12 +51,5 @@
 
   &:active {
     fill: $social-item-down;
-  }
-
-  @media screen and (min-width: $tablet-width) {
-    .social-list {
-      padding-top: 20px;
-      min-height: 230px;
-    }
   }
 }

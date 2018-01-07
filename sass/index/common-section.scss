@@ -1,23 +1,49 @@
 @import "global/variable.scss";
+@import "global/mixins.scss";
 
 .common-section {
   margin: 0;
   padding: 36px 6% 0;
   color: #333333;
   text-align: center;
+
+  @include tablet {
+    height: 169px;
+    padding-bottom: 0;
+  }
 }
 
 .common-section p {
   padding: 0 3%;
+
+  @include tablet {
+    width: 500px;
+    margin: 30px auto;
+    padding-top: 0;
+  }
+
+  @include desktop {
+    width: 430px;
+  }
 }
 
 .common-section--index p {
   padding-top: 17px;
   margin-bottom: 8px;
+
+  @include desktop {
+    width: 483px;
+    margin: 32px auto;
+  }
 }
 
 .common-section .button {
   margin-top: 30px;
+
+  @include tablet {
+    width: 460px;
+    margin-top: 42px;
+  }
 }
 
 .common-section__title {
@@ -26,30 +52,84 @@
   line-height: 25px;
   color: #000000;
   margin-bottom: 10px;
+
+  @include tablet {
+    padding-top: 20px;
+    width: 460px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    padding-top: 10px;
+  }
 }
 
 .common-section--index .common-section__title {
   width: 260px;
   margin: auto;
   margin-top: 3px;
+
+  @include tablet {
+    font-size: 21px;
+    padding-top: 12px;
+    width: 460px;
+    margin: 0 auto;
+    margin-left: none;
+  }
+}
+
+.common-section--index .common-section__title--big {
+  @include tablet {
+    font-size: 30px;
+    padding-top: 30px;
+  }
 }
 
 .common-section--second {
   padding-top: 24px;
+
+  @include tablet {
+    height: 240px;
+  }
 }
 
 .common-section--second p {
   padding-top: 8px;
+
+  @include tablet {
+    width: 450px;
+  }
 }
 
 .common-section__title--big {
   font-size: 21px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 25px;
+    padding-top: 40px;
+  }
+
+  @include desktop {
+    padding-top: 75px;
+  }
 }
 
-
-.common-section--photo .common-section__title--big,
 .common-section--form .common-section__title--big {
   font-size: 18px;
+
+  @include tablet {
+    font-size: 30px;
+  }
+}
+
+.common-section--photo .common-section__title--big {
+  font-size: 18px;
+
+  @include tablet {
+    margin-top: 5px;
+    font-size: 30px;
+  }
 }
 
 .common-section--form p,
@@ -58,88 +138,16 @@
   padding-top: 16px;
 }
 
+.common-section--photo-second {
+  @include tablet {
+    padding-top: 53px;
+  }
+}
+
 .common-section--photo-second .common-section__title--big {
   padding-top: 10px;
 }
 
 .common-section--photo-second p {
   padding-top: 12px;
-}
-
-@media screen and (min-width: $tablet-width) {
-  .common-section {
-    height: 169px;
-    padding-bottom: 0;
-  }
-
-  .common-section--second {
-    height: 240px;
-  }
-
-  .common-section--index .common-section__title {
-    font-size: 21px;
-    padding-top: 12px;
-    width: 460px;
-    margin: 0 auto;
-    margin-left: none;
-  }
-
-  .common-section--photo .common-section__title--big {
-    margin-top: 5px;
-    font-size: 30px;
-  }
-
-  .common-section--photo-second {
-    padding-top: 53px;
-  }
-
-  .common-section__title {
-    padding-top: 20px;
-    width: 460px;
-    margin: 0 auto;
-  }
-
-  .common-section p {
-    width: 500px;
-    margin: 30px auto;
-    padding-top: 0;
-  }
-
-  .common-section__title--big {
-    font-size: 30px;
-    line-height: 25px;
-    padding-top: 40px;
-  }
-
-  .common-section--index .common-section__title--big {
-    font-size: 30px;
-    padding-top: 30px;
-  }
-
-  .common-section--form .common-section__title--big {
-    font-size: 30px;
-  }
-
-  .common-section--second p {
-    width: 450px;
-  }
-
-  .common-section .button {
-    width: 460px;
-    margin-top: 42px;
-  }
-}
-
-@media screen and (min-width: $desktop-width) {
-  .common-section__title {
-    padding-top: 10px;
-  }
-
-  .common-section__title--big {
-    padding-top: 75px;
-  }
-
-  .common-section p {
-    width: 430px;
-  }
 }

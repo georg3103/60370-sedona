@@ -1,4 +1,6 @@
 /* COLORS */
+
+/* style-colors */
 $dark-color: #000000;
 $light-color: #ffffff;
 $warning-color: #ff5c5c;
@@ -11,19 +13,19 @@ $darker-20pct-color: #cccccc;
 $darker-36pct-color: #a3a3a3;
 $darker-40pct-color: #999999;
 $darker-80pct-color: #333333;
-
+/* mobile-menu-colors */
 $mobile-menu-color: #f7fafc;
 $mobile-menu-hover: #669ec0;
 $mobile-menu-down: #5496bd;
 $mobile-menu-item-down: #88b6d1;
-
+/* nav-colors */
 $main-nav-item: $dark-color;
 $main-nav-hover: #9ac2db;
 $main-nav-down: #b2b2b2;
 $main-nav-active: #766357;
 $main-nav-active-hover: #604e43;
 $main-nav-active-down: #d6d0cc;
-
+/* button-colors */
 $button-item: #ffffff;
 $button-bg: #81b3d2;
 $button-item-hover: #ffffff;
@@ -32,40 +34,40 @@ $button-item-down: #88b6d1;
 $button-bg-down: #5496bd;
 $button-item-disabled: #ffffff;
 $button-bg-disabled: #e5e5e5;
-
+/* social-colors */
 $social-item: #ffffff;
 $social-bg: #81b3d2;
 $social-item-hover: #ffffff;
 $social-bg-hover: #669ec0;
 $social-item-down: #88b6d1;
 $social-bg-down: #5496bd;
-
+/* logo-colors */
 $logo: #000000;
 $logo-hover: #81b3d2;
 $logo-down: #e7e7e7;
-
+/* input-colors */
 $input: #f2f2f2;
 $input-hover: #e5e5e5;
 $input-down: #ffffff;
-
+/* radio-colors */
 $radio-item: #333333;
 $radio-bg: #f2f2f2;
 $radio-item-hover: #333333;
 $radio-bg-hover: #e5e5e5;
 $radio-item-down: #a4a4a4;
 $radio-bg-down: #d5d5d5;
-
+/* checkbox-colors */
 $checkbox-item: #333333;
 $checkbox-bg: #f2f2f2;
 $checkbox-item-hover: #333333;
 $checkbox-bg-hover: #e5e5e5;
 $checkbox-item-down: #a4a4a4;
 $checkbox-bg-down: #d5d5d5;
-
+/* replay-colors */
 $replay: #5c6870;
 $replay-hover: #333333;
 $replay-down: #c1c1c1;
-
+/* video-btn-colors */
 $video-btn: #5c6870;
 $video-btn-hover: #333333;
 $video-btn-down: #c1c1c1;
