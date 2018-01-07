@@ -1,6 +1,7 @@
 @import "global/variable.scss";
+@import "global/mixins.scss";
 
-@media screen and (min-width: $tablet-width) {
+@include tablet {
   .block {
     display: block;
   }

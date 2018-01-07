@@ -1,20 +1,12 @@
 @import "global/variable.scss";
+@import "global/mixins.scss";
 
 .logo {
   display: block;
   height: 58px;
   border: none;
-}
 
-.logo__picture {
-  display: block;
-  width: 102px;
-  height: 83px;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: $tablet-width) {
-  .logo {
+  @include tablet {
     position: absolute;
     top: 0;
     left: 50%;
@@ -22,8 +14,13 @@
   }
 }
 
-@media screen and (min-width: $desktop-width) {
-  .logo__picture {
+.logo__picture {
+  display: block;
+  width: 102px;
+  height: 83px;
+  margin: 0 auto;
+
+  @include desktop {
     width: 187px;
     height: 96px;
   }
