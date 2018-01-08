@@ -1,8 +1,19 @@
 @import "global/variable.scss";
+@import "global/mixins.scss";
 
 .video {
   margin: 36px auto;
   margin-bottom: 39px;
+
+  @include tablet {
+    margin: 25px auto;
+    margin-bottom: 62px;
+  }
+
+  @include desktop {
+    margin-top: 60px;
+    margin-bottom: 85px;
+  }
 }
 
 .video__window {
@@ -14,6 +25,34 @@
   background-size: 320px 201px;
   position: relative;
   height: 200px;
+
+  @include retina {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
+
+  @include tablet {
+    background-image: url("../img/video-tablet@1x.jpg");
+    background-size: 650px 500px;
+    height: 500px;
+    width: 650px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+    @include retina {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
+  }
+
+  @include desktop {
+    background-image: url("../img/video-desktop@1x.jpg");
+    background-size: 800px auto;
+    width: 800px;
+
+    @include retina {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
+  }
 }
 
 .video__controls {
@@ -24,6 +63,18 @@
   width: 280px;
   margin: 0 auto;
   background-color: #f2f2f2;
+
+  @include tablet {
+    width: 648px;
+    height: 96px;
+    margin-top: -96px;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: row;
+  }
+
+  @include desktop {
+    width: 800px;
+  }
 }
 
 .video__scroll {
@@ -57,6 +108,32 @@
     background-color: #ffffff;
     border-radius: 50%;
   }
+
+  @include tablet {
+    position: unset;
+    top: unset;
+    left: unset;
+    background-color: unset;
+    flex-grow: 1;
+    width: 280px;
+    min-height: 45px;
+
+    &::before {
+      width: 390px;
+      top: 45px;
+    }
+
+    &::after {
+      top: 39px;
+      left: 135px;
+    }
+  }
+
+  @include desktop {
+    &::before {
+      width: 540px;
+    }
+  }
 }
 
 .video__button {
@@ -84,94 +161,8 @@
   &:active {
     fill: $video-btn-down;
   }
-}
 
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .video__window {
-    background-image: url("../img/video-mobile@2x.jpg");
-  }
-}
-
-@media screen and (min-width: $tablet-width) {
-  .video {
-    margin: 25px auto;
-    margin-bottom: 62px;
-  }
-
-  .video__window {
-    background-image: url("../img/video-tablet@1x.jpg");
-    background-size: 650px 500px;
-    height: 500px;
-    width: 650px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .video__controls {
-    width: 648px;
-    height: 96px;
-    margin-top: -96px;
-    background-color: rgba(0, 0, 0, 0.5);
-    flex-direction: row;
-  }
-
-  .video__scroll {
-    position: unset;
-    top: unset;
-    left: unset;
-    background-color: unset;
-    flex-grow: 1;
-    width: 280px;
-    min-height: 45px;
-
-    &::before {
-      width: 390px;
-      top: 45px;
-    }
-
-    &::after {
-      top: 39px;
-      left: 135px;
-    }
-  }
-
-  .posts__like--icon-video {
+  @include tablet {
     fill: #ffffff;
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .video__window {
-      background-image: url("../img/video-tablet@2x.jpg");
-    }
-  }
-}
-
-@media screen and (min-width: $desktop-width) {
-  .video__window {
-    background-image: url("../img/video-desktop@1x.jpg");
-    background-size: 800px auto;
-    width: 800px;
-  }
-
-  .video {
-    margin-top: 60px;
-    margin-bottom: 85px;
-  }
-
-  .video__controls {
-    width: 800px;
-  }
-
-  .video__scroll {
-    &::before {
-      width: 540px;
-    }
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .video__window {
-      background-image: url("../img/video-desktop@2x.jpg");
-    }
   }
 }

@@ -1,11 +1,20 @@
 @import "global/variable.scss";
+@import "global/mixins.scss";
 
 .toggle {
   margin-bottom: 12px;
+
+  @include tablet {
+    padding-left: 16px;
+  }
 }
 
 .toggle__item {
   margin-bottom: 13px;
+
+  @include tablet {
+    margin-bottom: 22px;
+  }
 }
 
 .toggle__input {
@@ -60,15 +69,5 @@
   &:active::before {
     border-color: $darker-16pct-color;
     background-color: $darker-16pct-color;
-  }
-}
-
-@media screen and (min-width: $tablet-width) {
-  .toggle {
-    padding-left: 16px;
-  }
-
-  .toggle__item {
-    margin-bottom: 22px;
   }
 }

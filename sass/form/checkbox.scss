@@ -1,14 +1,29 @@
 @import "global/variable.scss";
+@import "global/mixins.scss";
 
 .checkbox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include tablet {
+    margin: 0 auto;
+    width: 466px;
+    padding-top: 22px;
+  }
 }
 
 .checkbox__item {
   width: 100%;
   margin-bottom: 25px;
+
+  @include tablet {
+    width: 44%;
+  }
+
+  @include desktop {
+    width: 25%;
+  }
 }
 
 .checkbox__input {
@@ -76,20 +91,3 @@
   }
 }
 
-@media screen and (min-width: $tablet-width) {
-  .checkbox {
-    margin: 0 auto;
-    width: 466px;
-    padding-top: 22px;
-  }
-
-  .checkbox__item {
-    width: 44%;
-  }
-}
-
-@media screen and (min-width: $desktop-width) {
-  .checkbox__item {
-    width: 25%;
-  }
-}

@@ -1,3 +1,5 @@
+@import "global/mixins.scss";
+
 .popup {
   position: fixed;
   box-sizing: border-box;
@@ -11,13 +13,11 @@
   box-shadow: 0 6px 25px -3px rgba(black, 0.2);
   animation: popup-open 650ms ease-out;
 
-  @media screen and (min-width: $tablet-width) {
-    @media screen and (min-width: $tablet-width) {
-      width: calc(100% - 120px);
-    }
+  @include tablet {
+    width: calc(100% - 120px);
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     width: 640px;
   }
 }
@@ -30,7 +30,7 @@
   padding-left: 50px;
   padding-right: 50px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     max-width: 450px;
     padding: 0;
     padding-top: 55px;
@@ -62,7 +62,7 @@
   line-height: 26px;
   font-weight: bold;
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     font-size: 30px;
     line-height: 1;
   }
@@ -89,7 +89,7 @@
   padding: 20px 0;
   background-color: #f2f2f2;
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     width: auto;
     margin: 0;
     padding: 45px 92px;
@@ -97,7 +97,8 @@
 }
 
 .popup--fail {
-  @media screen and (min-width: $tablet-width) {
+  
+  @include tablet {
     width: 400px;
     padding-left: 50px;
     padding-right: 50px;

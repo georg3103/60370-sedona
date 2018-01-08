@@ -1,9 +1,19 @@
 @import "global/variable.scss";
+@import "global/mixins.scss";
 
 .textarea {
   display: flex;
   margin-bottom: 20px;
   color: #000000;
+
+  @include tablet {
+    min-width: 646px;
+    padding: 0 60px;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .textarea__input {
@@ -21,17 +31,4 @@
   background-size: 58px 58px;
   border: none;
   outline: none;
-}
-
-@media screen and (min-width: $tablet-width) {
-  .textarea {
-    min-width: 646px;
-    padding: 0 60px;
-  }
-}
-
-@media screen and (min-width: $desktop-width) {
-  .textarea {
-    padding: 0;
-  }
 }

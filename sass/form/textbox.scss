@@ -1,4 +1,5 @@
 @import "global/variable.scss";
+@import "global/mixins.scss";
 
 .textbox {
   display: flex;
@@ -17,15 +18,45 @@
   color: #000000;
 }
 
+.textbox__title--display {
+
+  @include desktop {
+    display: none;
+  }
+}
+
 .textbox__title--contacts {
   padding-top: 0;
   padding-bottom: 6px;
   padding-left: 21px;
+
+  @include tablet {
+    margin-bottom: 5px;
+    line-height: 25px;
+    text-align: left;
+  }
+
+  @include desktop {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+  }
 }
 
 .textbox__inner {
   display: flex;
   width: 100%;
+
+  @include desktop {
+    width: 312px;
+  }
+}
+
+.textbox__inner--name {
+
+  @include desktop {
+    width: 350px;
+  }
 }
 
 .textbox__input {
@@ -59,6 +90,16 @@
   width: 100%;
   margin-bottom: 15px;
   padding: 0;
+
+  @include tablet {
+    padding: 0 60px;
+  }
+
+  @include desktop {
+    width: 49%;
+    flex-direction: row;
+    padding: 0;
+  }
 }
 
 .textbox__warning {
@@ -85,63 +126,27 @@
   margin-bottom: 12px;
 }
 
-@media screen and (min-width: $tablet-width) {
-  .textbox__title--contacts {
-    margin-bottom: 5px;
-    line-height: 25px;
-    text-align: left;
-  }
+/* MUST BE CHANGED */
 
-  .textbox--contacts {
-    padding: 0 60px;
-  }
-  /*
-    .textbox__warning {
-      display: none;
-      top: 0;
-      left: unset;
-      right: 0;
-      font-weight: normal;
-    }
-  */
-}
+.feedback__section:nth-child(1) .feedback__section--title {
 
-@media screen and (min-width: $desktop-width) {
-  .textbox--contacts {
-    width: 49%;
-    flex-direction: row;
-    padding: 0;
-  }
-
-  .textbox__title--contacts {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 15px;
-  }
-
-  .textbox__inner {
-    width: 312px;
-  }
-
-  .textbox__inner--name {
-    width: 350px;
-  }
-
-  .feedback__section:nth-child(3) .feedback__section--title {
-    text-align: left;
-    margin-left: 70px;
-  }
-
-  .feedback__section:nth-child(1) .feedback__section--title {
+  @include desktop {
     text-align: left;
     margin-left: 0;
   }
+}
 
-  .feedback__section:nth-child(2) .feedback__section--title {
+.feedback__section:nth-child(2) .feedback__section--title {
+
+  @include desktop {
     margin: 0 auto;
   }
+}
 
-  .textbox__title--display {
-    display: none;
+.feedback__section:nth-child(3) .feedback__section--title {
+
+  @include desktop {
+    text-align: left;
+    margin-left: 70px;
   }
 }
