@@ -2,7 +2,7 @@
 @import "global/mixins.scss";
 
 .common-section {
-  margin: 0;
+  margin-bottom: 28px;
   padding: 36px 6% 0;
   color: #333333;
   text-align: center;
@@ -38,7 +38,7 @@
 }
 
 .common-section .button {
-  margin-top: 30px;
+  margin-top: 33px;
 
   @include tablet {
     width: 460px;
@@ -94,7 +94,7 @@
 }
 
 .common-section--second p {
-  padding-top: 8px;
+  padding-top: 4px;
 
   @include tablet {
     width: 450px;
@@ -134,7 +134,7 @@
 
 .common-section--form p,
 .common-section--photo p {
-  padding: 0 1%;
+  padding: 0 2%;
   padding-top: 16px;
 }
 
@@ -144,10 +144,6 @@
   }
 }
 
-.common-section--photo-second .common-section__title--big {
-  padding-top: 10px;
-}
-
 .common-section--photo-second p {
-  padding-top: 12px;
+  padding-top: 10px;
 }

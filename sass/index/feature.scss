@@ -19,7 +19,7 @@
 
 .feature__item {
   display: flex;
-  padding: 0 5% 0;
+
   line-height: 21px;
   text-align: left;
   margin-top: 23px;
@@ -36,8 +36,8 @@
 
 .feature__item p {
   margin: 0;
-  padding-top: 8px;
   width: 232px;
+  padding-top: 8px;
 
   @include tablet {
     width: 165px;
@@ -51,8 +51,10 @@
 }
 
 .feature__icon {
+  padding-left: 20px;
+  padding-top: 5px;
   display: block;
-  width: 69px;
+  width: 40px;
   height: 37px;
 
   @include tablet {
@@ -66,7 +68,7 @@
 }
 
 .feature__text {
-  padding-left: 13px;
+  padding-left: 10px;
 
   @include tablet {
     padding-left: 0;
@@ -74,6 +76,7 @@
 }
 
 .feature__title {
+  padding-top: 8px;
   font-weight: bold;
   font-size: 18px;
   line-height: 37px;
@@ -86,7 +89,6 @@
 }
 
 .feature__item:nth-child(1) {
-  margin-top: 33px;
 
   @include tablet {
     margin-top: 0;
@@ -95,6 +97,7 @@
 }
 
 .feature__item:nth-child(2) {
+  margin-top: 14px;
 
   @include tablet {
     order: 3;
@@ -102,7 +105,7 @@
 }
 
 .feature__item:nth-child(3) {
-  margin-top: 27px;
+  margin-top: 18px;
 
   @include tablet {
     margin-top: 0;
