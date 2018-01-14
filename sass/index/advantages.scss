@@ -75,6 +75,8 @@
 .advantages--brief {
 
   .advantages__text {
+    min-height: 168px;
+
     @include tablet {
       padding-top: 30px;
     }
@@ -125,9 +127,9 @@
 }
 
 .advantages__text {
-  padding: 20px 20px;
+  padding: 0 20px;
   line-height: 21px;
-  min-height: 168px;
+  min-height: 192px;
   box-sizing: border-box;
 
   @include tablet {
@@ -147,10 +149,12 @@
 .advantages--brief .advantages__title {
   font-size: 18px;
   line-height: 10px;
-  padding-top: 6px;
+  padding-top: 4px;
 }
 
 .advantages__number {
+  margin-bottom: 14px;
+
   &:before {
     content: "- ";
   }
@@ -203,7 +207,7 @@
 
 .advantages__title {
   font-size: 18px;
-  padding-top: 10px;
+  padding-top: 26px;
 
   @include tablet {
     padding-top: 0;
@@ -229,7 +233,7 @@
   padding-right: 0;
   padding-top: 17px;
   padding-bottom: 0;
-  margin: 0 30px;
+  margin: 0 36px;
 }
 
 .advantages__item:nth-child(1),

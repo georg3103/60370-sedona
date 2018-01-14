@@ -99,7 +99,7 @@
 
 .feedback__section:nth-child(1) {
 
-   @include tablet {
+  @include tablet {
     margin-left: auto;
     margin-right: 33px;
     width: 40%;
@@ -270,7 +270,7 @@
 }
 
 .feedback__section:nth-child(4) .checkbox__item:nth-child(4) {
-    
+
   @include tablet {
     order: 4;
   }
