@@ -1,8 +1,7 @@
 @import "global/variable.scss";
 @import "global/mixins.scss";
 
-@include tablet {
-  .block {
-    display: block;
-  }
+.block {
+  display: block;
 }
+
