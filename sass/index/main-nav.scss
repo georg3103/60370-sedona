@@ -126,6 +126,7 @@
 
   @include tablet {
     color: $main-nav-active;
+    background-color: $light-color;
 
     &:hover {
       color: $main-nav-active-hover;

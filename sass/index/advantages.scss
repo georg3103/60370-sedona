@@ -7,13 +7,6 @@
   background-color: #81b3d2;
 }
 
-.advantages p {
-  @include tablet {
-    padding: 0 12%;
-    margin-top: 17px;
-  }
-}
-
 .advantages--first {
   padding-top: 36px;
   background-image: url("../img/bg-triangle.svg");
@@ -21,7 +14,7 @@
   background-position: 50% top;
   background-size: auto, auto;
 
-  @media screen and (min-width: 338px) {
+  @include tablet {
     padding-top: 0;
     background-image: none;
   }
@@ -29,7 +22,7 @@
   .advantages__title {
     @include desktop {
       padding: 0 12%;
-      margin-top: 5px;
+      margin-top: 26px;
     }
   }
 
@@ -61,7 +54,7 @@
   .advantages__title {
     @include desktop {
       padding: 0 20%;
-      margin-top: 5px;
+      margin-top: 22px;
     }
   }
 
@@ -84,15 +77,13 @@
 
   .advantages__number {
     @include tablet {
-      margin-top: 6px;
+      margin-top: 1px;
     }
   }
 
   .advantages__title {
     @include tablet {
       padding: 0 10%;
-      font-size: 21px;
-      line-height: 30px;
       margin-bottom: 0;
     }
   }
@@ -129,7 +120,7 @@
 .advantages__text {
   padding: 0 20px;
   line-height: 21px;
-  min-height: 192px;
+  min-height: 193px;
   box-sizing: border-box;
 
   @include tablet {
@@ -144,12 +135,22 @@
 
 .advantages__text p {
   padding: 0;
+
+  @include tablet {
+    padding-top: 8px;
+  }
 }
 
 .advantages--brief .advantages__title {
   font-size: 18px;
   line-height: 10px;
   padding-top: 4px;
+
+  @include tablet {
+    padding-top: 15px;
+    font-size: 21px;
+    line-height: 30px;
+  }
 }
 
 .advantages__number {
@@ -164,7 +165,7 @@
   }
 
   @include tablet {
-    margin-top: 13px;
+    margin-top: 0;
   }
 }
 
@@ -210,7 +211,7 @@
   padding-top: 26px;
 
   @include tablet {
-    padding-top: 0;
+    padding-top: 4px;
     font-size: 21px;
     margin-bottom: 0px;
     font-size: 21px;

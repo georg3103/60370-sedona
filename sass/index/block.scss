@@ -3,5 +3,26 @@
 
 .block-m {
   display: block;
+
+  @include tablet {
+    display: inline;
+  }
 }
 
+.block-t {
+
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    display: inline;
+  }
+}
+
+.block-d {
+
+    @include desktop {
+      display: block;
+    }
+  }

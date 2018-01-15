@@ -7,6 +7,7 @@
   color: #000000;
 
   @include tablet {
+    margin-bottom: 10px;
     min-width: 646px;
     padding: 0 60px;
   }
@@ -21,8 +22,6 @@
   height: 130px;
   padding: 10px 20px;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
   color: #000000;
   text-transform: none;
   background-color: #f2f2f2;
@@ -31,4 +30,12 @@
   background-size: 58px 58px;
   border: none;
   outline: none;
+
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 29px;
+
+  @include tablet {
+    height: 138px;
+  }
 }
