@@ -7,6 +7,10 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
+
+  @include tablet {
+    margin-bottom: 46px;
+  }
 }
 
 .feedback__section {
@@ -20,6 +24,7 @@
   text-align: center;
   border: none;
   border-top: 1px solid #e5e5e5;
+  box-sizing: border-box;
 
   @include tablet {
     border-top: none;
@@ -59,7 +64,7 @@
     text-align: left;
     font-size: 21px;
     margin-top: 27px;
-    padding-left: 16px;
+    padding-left: 13px;
     margin-bottom: 60px;
     margin-left: 0;
     margin-right: 0;
@@ -100,9 +105,9 @@
 .feedback__section:nth-child(1) {
 
   @include tablet {
-    margin-left: auto;
-    margin-right: 33px;
-    width: 40%;
+    margin-left: 0;
+    margin-right: 5%;
+    width: 45%;
     order: 2;
     padding-right: 10px;
   }
@@ -114,29 +119,10 @@
   }
 }
 
-.feedback__section:nth-child(1) .feedback__section-wrapper {
-
-  @include tablet {
-    padding-left: 25px;
-  }
-
-  @include desktop {
-    padding-left: 98px;
-    padding-right: 84px;
-  }
-}
-
 .feedback__section:nth-child(1) .feedback__section-title {
 
   @include tablet {
-    padding-left: 0;
-  }
-}
-
-.feedback__section:nth-child(1) .textbox {
-
-  @include tablet {
-    margin-right: 16px;
+    padding-left: 58px;
   }
 }
 
@@ -166,21 +152,13 @@
   }
 }
 
-.feedback__section:nth-child(2) .feedback__section-wrapper {
-
-  @include desktop {
-    padding-left: 98px;
-    padding-right: 76px;
-  }
-}
-
 .feedback__section:nth-child(3) {
   margin-bottom: 14px;
 
   @include tablet {
-    margin-right: auto;
-    margin-left: 33px;
-    width: 40%;
+    margin-right: 0;
+    margin-left: 5%;
+    width: 45%;
     order: 1;
     padding-left: 10px;
   }
@@ -195,12 +173,7 @@
 .feedback__section:nth-child(3) .feedback__section-wrapper {
 
   @include tablet {
-    border-right: 1px solid #dbdbdb;
-    margin-right: -33px;
-  }
-
-  @include desktop {
-    padding-left: 98px;
+    border-right: 1px solid black;
   }
 }
 
@@ -254,14 +227,6 @@
   }
 }
 
-.feedback__section:nth-child(4) .feedback__section-wrapper {
-
-  @include desktop {
-    padding-left: 98px;
-    padding-right: 65px;
-  }
-}
-
 .feedback__section:nth-child(4) .checkbox__item:nth-child(2) {
 
   @include tablet {
@@ -292,7 +257,7 @@
 
   @include tablet {
     padding-left: 0;
-
+    margin-top: 22px;
     margin-left: 60px;
     margin-right: 60px;
 
@@ -303,14 +268,6 @@
     padding-top: 20px;
     padding-bottom: 0;
     margin-bottom: 55px;
-  }
-}
-
-.feedback__section:nth-child(5) .feedback__section-wrapper {
-
-  @include desktop {
-    padding-left: 98px;
-    padding-right: 100px;
   }
 }
 

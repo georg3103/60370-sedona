@@ -10,8 +10,12 @@
   padding: 0;
 
   @include tablet {
-    padding-top: 20px;
+    padding-top: 2px;
     min-height: 50px;
+  }
+
+  @include desktop {
+    margin-right: 90px;
   }
 }
 

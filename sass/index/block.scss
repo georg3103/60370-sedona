@@ -14,4 +14,15 @@
   @include tablet {
     display: block;
   }
+
+  @include desktop {
+    display: inline;
+  }
 }
+
+.block-d {
+
+    @include desktop {
+      display: block;
+    }
+  }

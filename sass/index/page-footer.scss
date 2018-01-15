@@ -20,7 +20,7 @@
   }
 
   @include desktop {
-    margin-top: 10px;
+    margin-top: 26px;
   }
 }
 
@@ -36,6 +36,10 @@
     margin-bottom: 50px;
     margin-left: 40px;
   }
+
+  @include desktop {
+    margin-left: 114px;
+  }
 }
 
 .page-footer__social {
@@ -48,6 +52,10 @@
 
   @include tablet {
     margin-right: 40px;
+  }
+
+  @include desktop {
+    margin-right: 23px;
   }
 }
 

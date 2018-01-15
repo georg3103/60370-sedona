@@ -21,6 +21,7 @@
 
   @include desktop {
     width: auto;
+    margin-top: 47px;
   }
 }
 
@@ -33,12 +34,15 @@
 
   @include tablet {
     width: 324px;
+    min-height: 348px;
     padding: 0;
+    border-top: none;
   }
 
   @include desktop {
     width: 33.3%;
     padding: 0;
+    min-height: 267px;
   }
 }
 
@@ -47,6 +51,11 @@
   padding: 0;
   margin-top: 21px;
   margin-bottom: 23px;
+
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .posts__photo {
@@ -113,7 +122,8 @@
   }
 
   @include desktop {
-    padding-right: 20px;
+    padding-right: 9px;
+    margin-top: 7px;
   }
 }
 
@@ -149,7 +159,7 @@
 .posts__description {
 
   @include desktop {
-    padding-left: 20px;
+    padding-left: 24px;
   }
 }
 
@@ -159,7 +169,7 @@
     display: block;
     width: 650px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 18px;
   }
 
   @include desktop {
@@ -184,6 +194,10 @@
 
 .posts__item:nth-child(4) {
   border-bottom: 1px solid black;
+
+  @include tablet {
+    border-bottom: none;
+  }
 }
 
 .posts__item:nth-child(4) .posts__photo {

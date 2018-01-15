@@ -5,6 +5,11 @@
   display: flex;
   margin-bottom: 20px;
   min-width: 266px;
+
+  @include tablet {
+    // padding-left: 17%;
+    // padding-right: 3%;
+  }
 }
 
 .textbox__title {
@@ -16,6 +21,10 @@
   font-size: 14px;
   font-weight: normal;
   color: #000000;
+
+  @include tablet {
+    padding-left: 57px;
+  }
 }
 
 .textbox__title--display {
@@ -46,6 +55,10 @@
 .textbox__inner {
   display: flex;
   width: 100%;
+
+  @include tablet {
+    padding-right: 10px;
+  }
 
   @include desktop {
     width: 312px;
@@ -124,29 +137,4 @@
   background-position: calc(100% - 20px) 22px;
   background-color: #f2f2f2;
   margin-bottom: 12px;
-}
-
-/* MUST BE CHANGED */
-
-.feedback__section:nth-child(1) .feedback__section--title {
-
-  @include desktop {
-    text-align: left;
-    margin-left: 0;
-  }
-}
-
-.feedback__section:nth-child(2) .feedback__section--title {
-
-  @include desktop {
-    margin: 0 auto;
-  }
-}
-
-.feedback__section:nth-child(3) .feedback__section--title {
-
-  @include desktop {
-    text-align: left;
-    margin-left: 70px;
-  }
 }
