@@ -30,7 +30,7 @@
   font-size: 14px;
   padding: 0;
   min-height: 412px;
-  border-top: 1px solid black;
+  border-top: 1px solid #dbdbdb;
 
   @include tablet {
     width: 324px;
@@ -193,7 +193,7 @@
 }
 
 .posts__item:nth-child(4) {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #dbdbdb;
 
   @include tablet {
     border-bottom: none;

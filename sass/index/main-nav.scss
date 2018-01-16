@@ -85,6 +85,10 @@
     width: 20%;
     margin: 0;
   }
+
+  @include desktop {
+    border-bottom: none;
+  }
 }
 
 .main-nav__link {

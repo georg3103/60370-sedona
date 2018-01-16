@@ -46,9 +46,9 @@
   }
 
   @include desktop {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 15px;
+    padding-left: 24px;
+    padding-right: 19px;
+    padding-top: 18px;
   }
 }
 
@@ -109,11 +109,34 @@
   }
 
   @include desktop {
-    width: 49%;
+    width: 45%;
     flex-direction: row;
     padding: 0;
   }
 }
+
+.textbox--contacts:nth-child(1) {
+
+  @include desktop {
+    width: 44%;
+  }
+}
+
+.textbox--contacts:nth-child(2) {
+
+  @include desktop {
+    width: 56%;
+  }
+}
+
+.textbox--contacts:nth-child(2) .textbox__title--contacts{
+
+  @include desktop {
+    padding-left: 60px;
+  }
+}
+
+.textbox--contacts:nth-child(2)
 
 .textbox__warning {
   position: absolute;
