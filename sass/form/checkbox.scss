@@ -11,6 +11,10 @@
     width: 466px;
     padding-top: 22px;
   }
+
+  @include desktop {
+    min-width: 1000px;
+  }
 }
 
 .checkbox__item {
@@ -23,7 +27,13 @@
   }
 
   @include desktop {
-    width: 25%;
+    width: 22.5%;
+  }
+}
+
+.checkbox__item:nth-child(1) {
+  @include desktop {
+    margin-left: 20px;
   }
 }
 
